@@ -1,5 +1,5 @@
 /*--------------------------------------------------------------------*/
-/* dtnode.c                                                           */
+/* DTNode.c                                                           */
 /* Author: Eesha Agarwal                                              */
 /*--------------------------------------------------------------------*/
 
@@ -31,10 +31,10 @@ struct DTNode {
 };
 
 /* Returns a path with contents n->path/dir
-  or NULL if there is an allocation error.
+   or NULL if there is an allocation error.
 
-  Allocates memory for the returned string,
-  which is then owened by the caller. */
+   Allocates memory for the returned string,
+   which is then owened by the caller. */
 static char* DTNode_buildPath(DTNode n, const char* dir) {
    char* path;
 
@@ -66,18 +66,24 @@ DTNode DTNode_create(const char* dir, DTNode parent){
    assert(dir != NULL);
 
    new = malloc(sizeof(struct DTNode));
+
+   /* In case there is insufficient memory for the new DTNode. */
    if(new == NULL) {
       return NULL;
    }
 
    new->path = DTNode_buildPath(parent, dir);
 
+   /* In case there is insufficient memory for the new DTNode's path. */
    if(new->path == NULL) {
       free(new);
       return NULL;
    }
 
    new->parent = parent;
+
+   /* Allocating memory to hold the directories which are children
+      to a given DTNode. */
    new->DTChildren = DynArray_new(0);
    if(new->DTChildren == NULL) {
       free(new->path);
@@ -85,6 +91,8 @@ DTNode DTNode_create(const char* dir, DTNode parent){
       return NULL;
    }
 
+   /* Allocating memory to hold the files which are children
+      to a given DTNode. */
    new->fileChildren = DynArray_new(0);
    if(new->fileChildren == NULL) {
       free(new->path);
@@ -112,7 +120,7 @@ size_t DTNode_destroy(DTNode n) {
       count += DTNode_destroy(dChild);
    }
 
-   /* Removing file children. */
+   /* Removing all file children. */
    for(i = 0; i < DynArray_getLength(n->fileChildren); i++)
    {
       fChild = DynArray_get(n->fileChildren, i);
@@ -197,6 +205,7 @@ DTNode DTNode_getChild(DTNode n, size_t childID, boolean type) {
    /* If child to be retrieved is a directory. */
    if (!type) {
       if (DynArray_getLength(n->DTChildren) > childID) {
+         /* Returning DTNode child if found. */
          return DynArray_get(n->DTChildren, childID);
       } else {
          return NULL;
@@ -205,7 +214,7 @@ DTNode DTNode_getChild(DTNode n, size_t childID, boolean type) {
 
    /* If child to be retrieved is a file. */
    if (DynArray_getLength(n->fileChildren) > childID){
-      /* Returning a pointer and casting it as a directory. */
+      /* Returning FileNode child if found. */
       return (DTNode) DynArray_get(n->fileChildren, childID);
    } else {
       return NULL;
@@ -226,9 +235,12 @@ int DTNode_linkChildDirectory(DTNode parent, DTNode child) {
    assert(parent != NULL);
    assert(child != NULL);
 
+   /* If child is already in the tree. */
    if(DTNode_hasChild(parent, child->path, NULL))
       return ALREADY_IN_TREE;
    i = strlen(parent->path);
+
+   /* In case child's path is not parent's path + / + directory. */
    if(strncmp(child->path, parent->path, i))
       return PARENT_CHILD_ERROR;
    rest = child->path + i;
@@ -240,6 +252,7 @@ int DTNode_linkChildDirectory(DTNode parent, DTNode child) {
 
    child->parent = parent;
 
+   /* In case DTNode child is already present in DTNode parent's children. */
    if(DynArray_bsearch(parent->DTChildren, child, &i,
                        (int (*)(const void*, const void*)) DTNode_compare) == 1)
       return ALREADY_IN_TREE;
@@ -250,6 +263,7 @@ int DTNode_linkChildDirectory(DTNode parent, DTNode child) {
       return PARENT_CHILD_ERROR;
 }
 
+/* DTNode.h contains specification. */
 int DTNode_linkChildFile(DTNode parent, FileNode child) {
    size_t i;
    char* rest;
@@ -257,9 +271,12 @@ int DTNode_linkChildFile(DTNode parent, FileNode child) {
    assert(parent != NULL);
    assert(child != NULL);
 
+   /* If child is already in the tree. */
    if(DTNode_hasChild(parent, FileNode_getPath(child), NULL))
       return ALREADY_IN_TREE;
    i = strlen(parent->path);
+
+   /* In case child's path is not parent's path + / + directory. */
    if(strncmp(FileNode_getPath(child), parent->path, i))
       return PARENT_CHILD_ERROR;
    rest = FileNode_getPath(child)+ i;
@@ -271,6 +288,7 @@ int DTNode_linkChildFile(DTNode parent, FileNode child) {
 
    (void) FileNode_setParent(child, parent);
 
+   /* In case FileNode child is already present in DTNode parent's children. */
    if(DynArray_bsearch(parent->fileChildren, child, &i,
                        (int (*)(const void*, const void*)) FileNode_compare) == 1)
       return ALREADY_IN_TREE;
