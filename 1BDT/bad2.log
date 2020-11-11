@@ -1,0 +1,198 @@
++run
+The program being debugged has been started already.
+Start it from the beginning? (y or n) 
+Starting program: /u/eagarwal/Assignment-4/1BDT/bdtBad2 
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000ffffbe646104 in strcat () from /lib64/libc.so.6
++where
+#0  0x0000ffffbe646104 in strcat () from /lib64/libc.so.6
+#1  0x0000000000401be0 in BDT_newNode (parent=0x0, dir=0x430050 "a")
+    at bdtBad2.c:75
+#2  0x000000000040201c in BDT_insertRestOfPath (path=0x403580 "a/b/c", 
+    parent=0x0) at bdtBad2.c:262
+#3  0x000000000040216c in BDT_insertPath (path=0x403580 "a/b/c")
+    at bdtBad2.c:315
+#4  0x0000000000402830 in main () at bdt_client.c:40
++break 40
+Breakpoint 1 at 0x402824: file bdt_client.c, line 40.
++run
+The program being debugged has been started already.
+Start it from the beginning? (y or n) 
+Starting program: /u/eagarwal/Assignment-4/1BDT/bdtBad2 
+
+Breakpoint 1, main () at bdt_client.c:40
+/u/eagarwal/Assignment-4/1BDT/bdt_client.c:40:1601:beg:0x402824
++step
+BDT_insertPath (path=0x403580 "a/b/c") at bdtBad2.c:310
+/u/cos217/Assignment4/bdtBad2.c:310:7912:beg:0x40210c
++step
+/u/cos217/Assignment4/bdtBad2.c:312:7938:beg:0x402138
++step
+/u/cos217/Assignment4/bdtBad2.c:314:7995:beg:0x402154
++step
+BDT_traversePath (path=0x403580 "a/b/c") at bdtBad2.c:130
+/u/cos217/Assignment4/bdtBad2.c:130:3627:beg:0x401d28
++print path
+$1 = 0x403580 "a/b/c"
++step
+/u/cos217/Assignment4/bdtBad2.c:131:3652:beg:0x401d54
++step
+BDT_traversePathFrom (path=0x403580 "a/b/c", curr=0x0) at bdtBad2.c:96
+/u/cos217/Assignment4/bdtBad2.c:96:2581:beg:0x401c30
++print path
+$2 = 0x403580 "a/b/c"
++print curr
+$3 = (Node) 0x0
++step
+/u/cos217/Assignment4/bdtBad2.c:99:2641:beg:0x401c5c
++step
+/u/cos217/Assignment4/bdtBad2.c:100:2661:beg:0x401c68
++step
+/u/cos217/Assignment4/bdtBad2.c:122:3412:beg:0x401d10
++step
+BDT_traversePath (path=0x403580 "a/b/c") at bdtBad2.c:132
+/u/cos217/Assignment4/bdtBad2.c:132:3696:beg:0x401d68
++step
+BDT_insertPath (path=0x403580 "a/b/c") at bdtBad2.c:315
+/u/cos217/Assignment4/bdtBad2.c:315:8029:beg:0x402160
++print path
+$4 = 0x403580 "a/b/c"
++print curr
+$5 = (Node) 0x0
++step
+BDT_insertRestOfPath (path=0x403580 "a/b/c", parent=0x0) at bdtBad2.c:227
+/u/cos217/Assignment4/bdtBad2.c:227:6009:beg:0x401f20
++step
+/u/cos217/Assignment4/bdtBad2.c:228:6032:beg:0x401f28
++step
+/u/cos217/Assignment4/bdtBad2.c:231:6089:beg:0x401f2c
++step
+/u/cos217/Assignment4/bdtBad2.c:235:6150:beg:0x401f34
++step
+/u/cos217/Assignment4/bdtBad2.c:237:6176:beg:0x401f60
++step
+/u/cos217/Assignment4/bdtBad2.c:238:6198:beg:0x401f6c
++step
+/u/cos217/Assignment4/bdtBad2.c:255:6641:beg:0x401fc4
++step
+/u/cos217/Assignment4/bdtBad2.c:256:6683:beg:0x401fd8
++step
+/u/cos217/Assignment4/bdtBad2.c:258:6734:beg:0x401fec
++step
+/u/cos217/Assignment4/bdtBad2.c:259:6765:beg:0x401ff8
++step
+/u/cos217/Assignment4/bdtBad2.c:261:6803:beg:0x40200c
++print dirToken
+$6 = 0x430050 "a"
++step
+/u/cos217/Assignment4/bdtBad2.c:262:6832:beg:0x402010
++step
+BDT_newNode (parent=0x0, dir=0x430050 "a") at bdtBad2.c:64
+/u/cos217/Assignment4/bdtBad2.c:64:1912:beg:0x401b40
++step
+/u/cos217/Assignment4/bdtBad2.c:66:1937:beg:0x401b6c
++step
+/u/cos217/Assignment4/bdtBad2.c:67:1975:beg:0x401b78
++step
+/u/cos217/Assignment4/bdtBad2.c:70:2014:beg:0x401b8c
++step
+/u/cos217/Assignment4/bdtBad2.c:75:2111:beg:0x401bd0
++step
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000ffffbe646104 in strcat () from /lib64/libc.so.6
++print dir
+No symbol "dir" in current context.
++source .gdbinit2
++set logging file ./bad2.log
++set trace-commands on
++set logging on
+Already logging to ./bad2.log.
++run
+Starting program: /u/eagarwal/Assignment-4/1BDT/bdtBad2 
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000ffffbe646104 in strcat () from /lib64/libc.so.6
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-222.sd7.aarch64
++where
+#0  0x0000ffffbe646104 in strcat () from /lib64/libc.so.6
+#1  0x0000000000401be0 in BDT_newNode (parent=0x0, dir=0x430050 "a") at bdtBad2.c:75
+#2  0x000000000040201c in BDT_insertRestOfPath (path=0x403580 "a/b/c", parent=0x0) at bdtBad2.c:262
+#3  0x000000000040216c in BDT_insertPath (path=0x403580 "a/b/c") at bdtBad2.c:315
+#4  0x0000000000402830 in main () at bdt_client.c:40
++break 40
+Breakpoint 1 at 0x402824: file bdt_client.c, line 40.
++run
+The program being debugged has been started already.
+Start it from the beginning? (y or n) Starting program: /u/eagarwal/Assignment-4/1BDT/bdtBad2 
+
+Breakpoint 1, main () at bdt_client.c:40
+/u/eagarwal/Assignment-4/1BDT/bdt_client.c:40:1601:beg:0x402824
++step
+BDT_insertPath (path=0x403580 "a/b/c") at bdtBad2.c:310
+/u/cos217/Assignment4/bdtBad2.c:310:7912:beg:0x40210c
++step
+/u/cos217/Assignment4/bdtBad2.c:312:7938:beg:0x402138
++step
+/u/cos217/Assignment4/bdtBad2.c:314:7995:beg:0x402154
++step
+BDT_traversePath (path=0x403580 "a/b/c") at bdtBad2.c:130
+/u/cos217/Assignment4/bdtBad2.c:130:3627:beg:0x401d28
++step
+/u/cos217/Assignment4/bdtBad2.c:131:3652:beg:0x401d54
++step
+BDT_traversePathFrom (path=0x403580 "a/b/c", curr=0x0) at bdtBad2.c:96
+/u/cos217/Assignment4/bdtBad2.c:96:2581:beg:0x401c30
++step
+/u/cos217/Assignment4/bdtBad2.c:99:2641:beg:0x401c5c
++step
+/u/cos217/Assignment4/bdtBad2.c:100:2661:beg:0x401c68
++step
+/u/cos217/Assignment4/bdtBad2.c:122:3412:beg:0x401d10
++step
+BDT_traversePath (path=0x403580 "a/b/c") at bdtBad2.c:132
+/u/cos217/Assignment4/bdtBad2.c:132:3696:beg:0x401d68
++step
+BDT_insertPath (path=0x403580 "a/b/c") at bdtBad2.c:315
+/u/cos217/Assignment4/bdtBad2.c:315:8029:beg:0x402160
++step
+BDT_insertRestOfPath (path=0x403580 "a/b/c", parent=0x0) at bdtBad2.c:227
+/u/cos217/Assignment4/bdtBad2.c:227:6009:beg:0x401f20
++step
+/u/cos217/Assignment4/bdtBad2.c:228:6032:beg:0x401f28
++step
+/u/cos217/Assignment4/bdtBad2.c:231:6089:beg:0x401f2c
++step
+/u/cos217/Assignment4/bdtBad2.c:235:6150:beg:0x401f34
++step
+/u/cos217/Assignment4/bdtBad2.c:237:6176:beg:0x401f60
++step
+/u/cos217/Assignment4/bdtBad2.c:238:6198:beg:0x401f6c
++step
+/u/cos217/Assignment4/bdtBad2.c:255:6641:beg:0x401fc4
++step
+/u/cos217/Assignment4/bdtBad2.c:256:6683:beg:0x401fd8
++step
+/u/cos217/Assignment4/bdtBad2.c:258:6734:beg:0x401fec
++step
+/u/cos217/Assignment4/bdtBad2.c:259:6765:beg:0x401ff8
++step
+/u/cos217/Assignment4/bdtBad2.c:261:6803:beg:0x40200c
++step
+/u/cos217/Assignment4/bdtBad2.c:262:6832:beg:0x402010
++step
+BDT_newNode (parent=0x0, dir=0x430050 "a") at bdtBad2.c:64
+/u/cos217/Assignment4/bdtBad2.c:64:1912:beg:0x401b40
++step
+/u/cos217/Assignment4/bdtBad2.c:66:1937:beg:0x401b6c
++step
+/u/cos217/Assignment4/bdtBad2.c:67:1975:beg:0x401b78
++step
+/u/cos217/Assignment4/bdtBad2.c:70:2014:beg:0x401b8c
++step
+/u/cos217/Assignment4/bdtBad2.c:75:2111:beg:0x401bd0
++step
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000ffffbe646104 in strcat () from /lib64/libc.so.6

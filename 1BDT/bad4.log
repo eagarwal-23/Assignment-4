@@ -1,0 +1,20 @@
++run
+Starting program: /u/eagarwal/Assignment-4/1BDT/bdtBad4 
+[Inferior 1 (process 60247) exited normally]
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-222.sd7.aarch64
++run
+Starting program: /u/eagarwal/Assignment-4/1BDT/bdtBad4 
+[Inferior 1 (process 60274) exited normally]
++run
+Starting program: /u/eagarwal/Assignment-4/1BDT/bdtBad4 
+[Inferior 1 (process 60379) exited normally]
++run
+Starting program: /u/eagarwal/Assignment-4/1BDT/bdtBad4 
+[Inferior 1 (process 23424) exited normally]
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-222.sd7.aarch64
++run
+Starting program: /u/eagarwal/Assignment-4/1BDT/bdtBad4 
+[Inferior 1 (process 23455) exited normally]
++run
+Starting program: /u/eagarwal/Assignment-4/1BDT/bdtBad4 
+[Inferior 1 (process 23469) exited normally]

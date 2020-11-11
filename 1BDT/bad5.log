@@ -1,0 +1,59 @@
++break 440
+No line 440 in the current file.
+Make breakpoint pending on future shared library load? (y or [n]) +run
+Starting program: /u/eagarwal/Assignment-4/1BDT/bdtBad5 
+
+Program received signal SIGABRT, Aborted.
+0x0000ffffbe5f50e8 in raise () from /lib64/libc.so.6
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-222.sd7.aarch64
++where
+#0  0x0000ffffbe5f50e8 in raise () from /lib64/libc.so.6
+#1  0x0000ffffbe5f6760 in abort () from /lib64/libc.so.6
+#2  0x0000ffffbe5ee5dc in __assert_fail_base () from /lib64/libc.so.6
+#3  0x0000ffffbe5ee694 in __assert_fail () from /lib64/libc.so.6
+#4  0x0000000000402584 in BDT_strlenAccumulate (str=0x0, pAcc=0xfffffffff068) at bdtBad5.c:440
+#5  0x0000000000401400 in DynArray_map (oDynArray=0x430010, pfApply=0x402544 <BDT_strlenAccumulate>, 
+    pvExtra=0xfffffffff068) at dynarray.c:251
+#6  0x00000000004026ec in BDT_toString () at bdtBad5.c:476
+#7  0x000000000040284c in main () at bdt_client.c:31
++break BDT_toString
+Breakpoint 1 at 0x402680: file bdtBad5.c, line 467.
++run
+The program being debugged has been started already.
+Start it from the beginning? (y or n) Starting program: /u/eagarwal/Assignment-4/1BDT/bdtBad5 
+
+Breakpoint 1, BDT_toString () at bdtBad5.c:467
+/u/cos217/Assignment4/bdtBad5.c:467:11643:beg:0x402680
++step
+/u/cos217/Assignment4/bdtBad5.c:468:11694:beg:0x402688
++step
+/u/cos217/Assignment4/bdtBad5.c:470:11719:beg:0x40268c
++step
+/u/cos217/Assignment4/bdtBad5.c:471:11741:beg:0x4026a0
++run
+Starting program: /u/eagarwal/Assignment-4/1BDT/bdtBad5 
+
+Program received signal SIGABRT, Aborted.
+0x0000ffffbe5f50e8 in raise () from /lib64/libc.so.6
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-222.sd7.aarch64
++where
+#0  0x0000ffffbe5f50e8 in raise () from /lib64/libc.so.6
+#1  0x0000ffffbe5f6760 in abort () from /lib64/libc.so.6
+#2  0x0000ffffbe5ee5dc in __assert_fail_base () from /lib64/libc.so.6
+#3  0x0000ffffbe5ee694 in __assert_fail () from /lib64/libc.so.6
+#4  0x0000000000402584 in BDT_strlenAccumulate (str=0x0, pAcc=0xfffffffff068) at bdtBad5.c:440
+#5  0x0000000000401400 in DynArray_map (oDynArray=0x430010, pfApply=0x402544 <BDT_strlenAccumulate>, 
+    pvExtra=0xfffffffff068) at dynarray.c:251
+#6  0x00000000004026ec in BDT_toString () at bdtBad5.c:476
+#7  0x000000000040284c in main () at bdt_client.c:31
++break 31
+Breakpoint 1 at 0x402848: file bdt_client.c, line 31.
++run
+The program being debugged has been started already.
+Start it from the beginning? (y or n) Starting program: /u/eagarwal/Assignment-4/1BDT/bdtBad5 
+
+Breakpoint 1, main () at bdt_client.c:31
+/u/eagarwal/Assignment-4/1BDT/bdt_client.c:31:1222:beg:0x402848
++step
+BDT_toString () at bdtBad5.c:467
+/u/cos217/Assignment4/bdtBad5.c:467:11643:beg:0x402680

@@ -1,0 +1,602 @@
++break 82
+Breakpoint 1 at 0x402e10: file bdt_client.c, line 82.
++run
+Starting program: /u/eagarwal/Assignment-4/1BDT/bdtBad3 
+
+Breakpoint 1, main () at bdt_client.c:82
+/u/eagarwal/Assignment-4/1BDT/bdt_client.c:82:3357:beg:0x402e10
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-222.sd7.aarch64
++step
+BDT_rmPath (path=0x403888 "a/b/d/e") at bdtBad3.c:381
+/u/cos217/Assignment4/bdtBad3.c:381:9423:beg:0x40236c
++step
+/u/cos217/Assignment4/bdtBad3.c:383:9449:beg:0x402398
++step
+/u/cos217/Assignment4/bdtBad3.c:386:9507:beg:0x4023b4
++next
+/u/cos217/Assignment4/bdtBad3.c:387:9541:beg:0x4023c0
++next
+/u/cos217/Assignment4/bdtBad3.c:390:9589:beg:0x4023d4
++step
+BDT_rmPathAt (path=0x403888 "a/b/d/e", curr=0x430190) at bdtBad3.c:359
+/u/cos217/Assignment4/bdtBad3.c:359:8976:beg:0x4022a0
++step
+/u/cos217/Assignment4/bdtBad3.c:360:9001:beg:0x4022cc
++step
+/u/cos217/Assignment4/bdtBad3.c:362:9027:beg:0x4022f8
++step
+/u/cos217/Assignment4/bdtBad3.c:364:9054:beg:0x402304
++step
+/u/cos217/Assignment4/bdtBad3.c:365:9112:beg:0x40231c
++print parent->path
+$1 = 0x430050 "a/b/d"
++step
+/u/cos217/Assignment4/bdtBad3.c:368:9170:beg:0x402338
++step
+BDT_unlinkParentToChild (parent=0x430160, child=0x430190) at bdtBad3.c:201
+/u/cos217/Assignment4/bdtBad3.c:201:5396:beg:0x401f0c
++step
+/u/cos217/Assignment4/bdtBad3.c:203:5424:beg:0x401f38
++run
+Starting program: /u/eagarwal/Assignment-4/1BDT/bdtBad3 
+[Inferior 1 (process 20556) exited normally]
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-222.sd7.aarch64
++emacs
+Undefined command: "emacs".  Try "help".
++run
+Starting program: /u/eagarwal/Assignment-4/1BDT/bdtBad3 
+[Inferior 1 (process 21731) exited normally]
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-222.sd7.aarch64
++break BDT_unlinkParentToChild
+Breakpoint 1 at 0x401f0c: file bdtBad3.c, line 201.
++run
+Starting program: /u/eagarwal/Assignment-4/1BDT/bdtBad3 
+
+Breakpoint 1, BDT_unlinkParentToChild (parent=0x430160, child=0x430190) at bdtBad3.c:201
+/u/cos217/Assignment4/bdtBad3.c:201:5396:beg:0x401f0c
++step
+/u/cos217/Assignment4/bdtBad3.c:203:5424:beg:0x401f38
++step
+/u/cos217/Assignment4/bdtBad3.c:204:5457:beg:0x401f4c
++step
+/u/cos217/Assignment4/bdtBad3.c:212:5605:beg:0x401f80
++step
+/u/cos217/Assignment4/bdtBad3.c:214:5625:beg:0x401f84
++step
+BDT_rmPathAt (path=0x403888 "a/b/d/e", curr=0x430190) at bdtBad3.c:370
+/u/cos217/Assignment4/bdtBad3.c:370:9219:beg:0x402344
++step
+BDT_removePathFrom (curr=0x430190) at bdtBad3.c:150
+/u/cos217/Assignment4/bdtBad3.c:150:4147:beg:0x401e08
++step
+/u/cos217/Assignment4/bdtBad3.c:151:4169:beg:0x401e14
++step
+BDT_removePathFrom (curr=0x4301f0) at bdtBad3.c:150
+/u/cos217/Assignment4/bdtBad3.c:150:4147:beg:0x401e08
++step
+/u/cos217/Assignment4/bdtBad3.c:151:4169:beg:0x401e14
++step
+BDT_removePathFrom (curr=0x0) at bdtBad3.c:150
+/u/cos217/Assignment4/bdtBad3.c:150:4147:beg:0x401e08
++step
+/u/cos217/Assignment4/bdtBad3.c:157:4311:beg:0x401e5c
++step
+BDT_removePathFrom (curr=0x4301f0) at bdtBad3.c:152
+/u/cos217/Assignment4/bdtBad3.c:152:4209:beg:0x401e20
++step
+BDT_removePathFrom (curr=0x0) at bdtBad3.c:150
+/u/cos217/Assignment4/bdtBad3.c:150:4147:beg:0x401e08
++step
+/u/cos217/Assignment4/bdtBad3.c:157:4311:beg:0x401e5c
++step
+BDT_removePathFrom (curr=0x4301f0) at bdtBad3.c:153
+/u/cos217/Assignment4/bdtBad3.c:153:4249:beg:0x401e2c
++step
+/u/cos217/Assignment4/bdtBad3.c:154:4273:beg:0x401e38
++step
+/u/cos217/Assignment4/bdtBad3.c:155:4291:beg:0x401e40
++step
+/u/cos217/Assignment4/bdtBad3.c:157:4311:beg:0x401e5c
++step
+BDT_removePathFrom (curr=0x430190) at bdtBad3.c:152
+/u/cos217/Assignment4/bdtBad3.c:152:4209:beg:0x401e20
++step
+BDT_removePathFrom (curr=0x0) at bdtBad3.c:150
+/u/cos217/Assignment4/bdtBad3.c:150:4147:beg:0x401e08
++step
+/u/cos217/Assignment4/bdtBad3.c:157:4311:beg:0x401e5c
++step
+BDT_removePathFrom (curr=0x430190) at bdtBad3.c:153
+/u/cos217/Assignment4/bdtBad3.c:153:4249:beg:0x401e2c
++step
+/u/cos217/Assignment4/bdtBad3.c:154:4273:beg:0x401e38
++step
+/u/cos217/Assignment4/bdtBad3.c:155:4291:beg:0x401e40
++step
+/u/cos217/Assignment4/bdtBad3.c:157:4311:beg:0x401e5c
++step
+BDT_rmPathAt (path=0x403888 "a/b/d/e", curr=0x430190) at bdtBad3.c:371
+/u/cos217/Assignment4/bdtBad3.c:371:9251:beg:0x40234c
++step
+/u/cos217/Assignment4/bdtBad3.c:375:9342:beg:0x402358
++step
+BDT_rmPath (path=0x403888 "a/b/d/e") at bdtBad3.c:391
+/u/cos217/Assignment4/bdtBad3.c:391:9625:beg:0x4023e0
++step
+main () at bdt_client.c:83
+/u/eagarwal/Assignment-4/1BDT/bdt_client.c:83:3401:beg:0x402e44
++step
+BDT_containsPath (path=0x4037f8 "a/b/d") at bdtBad3.c:331
+/u/cos217/Assignment4/bdtBad3.c:331:8368:beg:0x4021fc
++step
+/u/cos217/Assignment4/bdtBad3.c:333:8394:beg:0x402228
++step
+/u/cos217/Assignment4/bdtBad3.c:336:8437:beg:0x402244
++step
+BDT_traversePath (path=0x4037f8 "a/b/d") at bdtBad3.c:140
+/u/cos217/Assignment4/bdtBad3.c:140:3870:beg:0x401db4
++step
+/u/cos217/Assignment4/bdtBad3.c:141:3895:beg:0x401de0
++break 90
+Breakpoint 1 at 0x402f38: file bdt_client.c, line 90.
++run
+Starting program: /u/eagarwal/Assignment-4/1BDT/bdtBad3 
+
+Breakpoint 1, main () at bdt_client.c:92
+/u/eagarwal/Assignment-4/1BDT/bdt_client.c:92:3769:beg:0x402f38
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-222.sd7.aarch64
++step
+BDT_insertPath (path=0x403a98 "a/y") at bdtBad3.c:319
+/u/cos217/Assignment4/bdtBad3.c:319:8116:beg:0x402188
++step
+/u/cos217/Assignment4/bdtBad3.c:321:8142:beg:0x4021b4
++step
+/u/cos217/Assignment4/bdtBad3.c:323:8199:beg:0x4021d0
++step
+BDT_traversePath (path=0x403a98 "a/y") at bdtBad3.c:140
+/u/cos217/Assignment4/bdtBad3.c:140:3870:beg:0x401db4
++step
+/u/cos217/Assignment4/bdtBad3.c:141:3895:beg:0x401de0
++step
+BDT_traversePathFrom (path=0x403a98 "a/y", curr=0x430070) at bdtBad3.c:106
+/u/cos217/Assignment4/bdtBad3.c:106:2824:beg:0x401cbc
++step
+/u/cos217/Assignment4/bdtBad3.c:109:2884:beg:0x401ce8
++step
+/u/cos217/Assignment4/bdtBad3.c:113:2968:beg:0x401cfc
++step
+/u/cos217/Assignment4/bdtBad3.c:117:3083:beg:0x401d1c
++step
+/u/cos217/Assignment4/bdtBad3.c:119:3178:beg:0x401d48
++step
+BDT_traversePathFrom (path=0x403a98 "a/y", curr=0x4300a0) at bdtBad3.c:106
+/u/cos217/Assignment4/bdtBad3.c:106:2824:beg:0x401cbc
++step
+/u/cos217/Assignment4/bdtBad3.c:109:2884:beg:0x401ce8
++step
+/u/cos217/Assignment4/bdtBad3.c:113:2968:beg:0x401cfc
++step
+/u/cos217/Assignment4/bdtBad3.c:117:3083:beg:0x401d1c
++step
+/u/cos217/Assignment4/bdtBad3.c:131:3639:beg:0x401d98
++step
+/u/cos217/Assignment4/bdtBad3.c:132:3655:beg:0x401d9c
++step
+/u/cos217/Assignment4/bdtBad3.c:121:3295:beg:0x401d5c
++step
+/u/cos217/Assignment4/bdtBad3.c:122:3321:beg:0x401d68
++step
+BDT_traversePathFrom (path=0x403a98 "a/y", curr=0x0) at bdtBad3.c:106
+/u/cos217/Assignment4/bdtBad3.c:106:2824:beg:0x401cbc
++step
+/u/cos217/Assignment4/bdtBad3.c:109:2884:beg:0x401ce8
++step
+/u/cos217/Assignment4/bdtBad3.c:110:2904:beg:0x401cf4
++step
+/u/cos217/Assignment4/bdtBad3.c:132:3655:beg:0x401d9c
++step
+/u/cos217/Assignment4/bdtBad3.c:124:3452:beg:0x401d7c
++step
+/u/cos217/Assignment4/bdtBad3.c:125:3479:beg:0x401d88
++step
+/u/cos217/Assignment4/bdtBad3.c:132:3655:beg:0x401d9c
++step
+BDT_traversePath (path=0x403a98 "a/y") at bdtBad3.c:142
+/u/cos217/Assignment4/bdtBad3.c:142:3939:beg:0x401df4
++step
+BDT_insertPath (path=0x403a98 "a/y") at bdtBad3.c:324
+/u/cos217/Assignment4/bdtBad3.c:324:8233:beg:0x4021dc
++step
+BDT_insertRestOfPath (path=0x403a98 "a/y", parent=0x430070) at bdtBad3.c:236
+/u/cos217/Assignment4/bdtBad3.c:236:6213:beg:0x401f9c
++step
+/u/cos217/Assignment4/bdtBad3.c:237:6236:beg:0x401fa4
++step
+/u/cos217/Assignment4/bdtBad3.c:240:6293:beg:0x401fa8
++step
+/u/cos217/Assignment4/bdtBad3.c:244:6354:beg:0x401fb0
++step
+/u/cos217/Assignment4/bdtBad3.c:246:6380:beg:0x401fdc
++step
+/u/cos217/Assignment4/bdtBad3.c:255:6558:beg:0x402004
++step
+/u/cos217/Assignment4/bdtBad3.c:259:6699:beg:0x402024
++step
+/u/cos217/Assignment4/bdtBad3.c:264:6845:beg:0x402040
++step
+/u/cos217/Assignment4/bdtBad3.c:265:6887:beg:0x402054
++step
+/u/cos217/Assignment4/bdtBad3.c:267:6938:beg:0x402068
++step
+/u/cos217/Assignment4/bdtBad3.c:268:6969:beg:0x402074
++step
+/u/cos217/Assignment4/bdtBad3.c:270:7007:beg:0x402088
++step
+/u/cos217/Assignment4/bdtBad3.c:271:7036:beg:0x40208c
++step
+BDT_newNode (parent=0x430070, dir=0x430220 "y") at bdtBad3.c:64
+/u/cos217/Assignment4/bdtBad3.c:64:1912:beg:0x401b40
++step
+/u/cos217/Assignment4/bdtBad3.c:66:1937:beg:0x401b6c
++step
+/u/cos217/Assignment4/bdtBad3.c:67:1975:beg:0x401b78
++step
+/u/cos217/Assignment4/bdtBad3.c:70:2014:beg:0x401b8c
++step
+/u/cos217/Assignment4/bdtBad3.c:73:2099:beg:0x401bbc
++step
+/u/cos217/Assignment4/bdtBad3.c:74:2163:beg:0x401bec
++step
+/u/cos217/Assignment4/bdtBad3.c:79:2232:beg:0x401c0c
++step
+/u/cos217/Assignment4/bdtBad3.c:80:2256:beg:0x401c18
++step
+/u/cos217/Assignment4/bdtBad3.c:81:2294:beg:0x401c2c
++step
+/u/cos217/Assignment4/bdtBad3.c:84:2329:beg:0x401c50
++step
+/u/cos217/Assignment4/bdtBad3.c:85:2355:beg:0x401c60
++step
+/u/cos217/Assignment4/bdtBad3.c:86:2380:beg:0x401c6c
++step
+/u/cos217/Assignment4/bdtBad3.c:87:2403:beg:0x401c74
++step
+/u/cos217/Assignment4/bdtBad3.c:89:2427:beg:0x401c7c
++step
+/u/cos217/Assignment4/bdtBad3.c:91:2440:beg:0x401c98
++step
+/u/cos217/Assignment4/bdtBad3.c:92:2455:beg:0x401c9c
++step
+BDT_insertRestOfPath (path=0x403a98 "a/y", parent=0x430070) at bdtBad3.c:276
+/u/cos217/Assignment4/bdtBad3.c:276:7216:beg:0x40209c
++step
+/u/cos217/Assignment4/bdtBad3.c:277:7243:beg:0x4020a8
++step
+/u/cos217/Assignment4/bdtBad3.c:288:7520:beg:0x4020f0
++step
+/u/cos217/Assignment4/bdtBad3.c:294:7647:beg:0x402114
++step
+/u/cos217/Assignment4/bdtBad3.c:295:7665:beg:0x40211c
++step
+/u/cos217/Assignment4/bdtBad3.c:270:7007:beg:0x402130
++step
+/u/cos217/Assignment4/bdtBad3.c:298:7707:beg:0x40213c
++step
+/u/cos217/Assignment4/bdtBad3.c:305:7887:beg:0x402144
++step
+/u/cos217/Assignment4/bdtBad3.c:310:7971:beg:0x402168
++step
+BDT_linkParentToChild (parent=0x430070, child=0x430190) at bdtBad3.c:171
+/u/cos217/Assignment4/bdtBad3.c:171:4654:beg:0x401e74
++step
+/u/cos217/Assignment4/bdtBad3.c:173:4682:beg:0x401ea0
++step
+/u/cos217/Assignment4/bdtBad3.c:175:4742:beg:0x401ec0
++step
+/u/cos217/Assignment4/bdtBad3.c:176:4777:beg:0x401ed0
++step
+/u/cos217/Assignment4/bdtBad3.c:182:4889:beg:0x401ef0
++step
+/u/cos217/Assignment4/bdtBad3.c:184:4909:beg:0x401ef4
++step
+BDT_insertRestOfPath (path=0x403a98 "a/y", parent=0x430070) at bdtBad3.c:312
+/u/cos217/Assignment4/bdtBad3.c:312:8030:beg:0x402174
++step
+BDT_insertPath (path=0x403a98 "a/y") at bdtBad3.c:325
+/u/cos217/Assignment4/bdtBad3.c:325:8277:beg:0x4021e8
++step
+main () at bdt_client.c:93
+/u/eagarwal/Assignment-4/1BDT/bdt_client.c:93:3813:beg:0x402f6c
++step
+BDT_toString () at bdtBad3.c:466
+/u/cos217/Assignment4/bdtBad3.c:466:11604:beg:0x402670
++step
+/u/cos217/Assignment4/bdtBad3.c:467:11655:beg:0x402678
++step
+/u/cos217/Assignment4/bdtBad3.c:469:11680:beg:0x40267c
++step
+/u/cos217/Assignment4/bdtBad3.c:472:11722:beg:0x402698
++step
+DynArray_new (uLength=5) at dynarray.c:84
+/u/eagarwal/Assignment-4/1BDT/dynarray.c:84:2239:beg:0x400ab8
++step
+/u/eagarwal/Assignment-4/1BDT/dynarray.c:85:2305:beg:0x400ac4
++step
+/u/eagarwal/Assignment-4/1BDT/dynarray.c:88:2351:beg:0x400ad8
++step
+/u/eagarwal/Assignment-4/1BDT/dynarray.c:89:2384:beg:0x400ae4
++step
+/u/eagarwal/Assignment-4/1BDT/dynarray.c:90:2418:beg:0x400af4
++step
+/u/eagarwal/Assignment-4/1BDT/dynarray.c:95:2540:beg:0x400b10
++step
+/u/eagarwal/Assignment-4/1BDT/dynarray.c:94:2515:beg:0x400b24
++step
+/u/eagarwal/Assignment-4/1BDT/dynarray.c:96:2607:beg:0x400b2c
++step
+/u/eagarwal/Assignment-4/1BDT/dynarray.c:102:2696:beg:0x400b4c
++step
+/u/eagarwal/Assignment-4/1BDT/dynarray.c:103:2717:beg:0x400b50
++step
+BDT_toString () at bdtBad3.c:473
+/u/cos217/Assignment4/bdtBad3.c:473:11754:beg:0x4026ac
++step
+BDT_preOrderTraversal (n=0x430070, d=0x430220, i=0) at bdtBad3.c:421
+/u/cos217/Assignment4/bdtBad3.c:421:10276:beg:0x4024a0
++step
+/u/cos217/Assignment4/bdtBad3.c:423:10299:beg:0x4024cc
++step
+/u/cos217/Assignment4/bdtBad3.c:424:10318:beg:0x4024d8
++step
+DynArray_set (oDynArray=0x430220, uIndex=0, pvElement=0x430010) at dynarray.c:144
+/u/eagarwal/Assignment-4/1BDT/dynarray.c:144:3687:beg:0x400d28
++step
+/u/eagarwal/Assignment-4/1BDT/dynarray.c:145:3717:beg:0x400d54
++step
+/u/eagarwal/Assignment-4/1BDT/dynarray.c:146:3757:beg:0x400d88
++step
+DynArray_isValid (oDynArray=0x430220) at dynarray.c:44
+/u/eagarwal/Assignment-4/1BDT/dynarray.c:44:1237:beg:0x4009a8
++step
+/u/eagarwal/Assignment-4/1BDT/dynarray.c:45:1296:beg:0x4009c4
++step
+/u/eagarwal/Assignment-4/1BDT/dynarray.c:46:1358:beg:0x4009e4
++step
+/u/eagarwal/Assignment-4/1BDT/dynarray.c:47:1404:beg:0x4009fc
++step
+/u/eagarwal/Assignment-4/1BDT/dynarray.c:48:1417:beg:0x400a00
++step
+DynArray_set (oDynArray=0x430220, uIndex=0, pvElement=0x430010) at dynarray.c:148
+/u/eagarwal/Assignment-4/1BDT/dynarray.c:148:3798:beg:0x400db8
++next
+/u/eagarwal/Assignment-4/1BDT/dynarray.c:149:3845:beg:0x400dd4
++next
+/u/eagarwal/Assignment-4/1BDT/dynarray.c:151:3890:beg:0x400df0
++next
+/u/eagarwal/Assignment-4/1BDT/dynarray.c:153:3931:beg:0x400e20
++next
+/u/eagarwal/Assignment-4/1BDT/dynarray.c:154:3962:beg:0x400e24
++next
+BDT_preOrderTraversal (n=0x430070, d=0x430220, i=0) at bdtBad3.c:425
+/u/cos217/Assignment4/bdtBad3.c:425:10360:beg:0x4024ec
++next
+/u/cos217/Assignment4/bdtBad3.c:426:10371:beg:0x4024f8
++next
+/u/cos217/Assignment4/bdtBad3.c:427:10421:beg:0x402510
++next
+/u/cos217/Assignment4/bdtBad3.c:429:10476:beg:0x402528
++next
+/u/cos217/Assignment4/bdtBad3.c:430:10489:beg:0x40252c
++next
+BDT_toString () at bdtBad3.c:475
+/u/cos217/Assignment4/bdtBad3.c:475:11804:beg:0x4026c4
++next
+/u/cos217/Assignment4/bdtBad3.c:478:11915:beg:0x4026d8
++next
+/u/cos217/Assignment4/bdtBad3.c:479:11948:beg:0x4026e4
++next
+/u/cos217/Assignment4/bdtBad3.c:483:12024:beg:0x402700
++next
+/u/cos217/Assignment4/bdtBad3.c:485:12044:beg:0x402708
++next
+/u/cos217/Assignment4/bdtBad3.c:488:12150:beg:0x40271c
++next
+/u/cos217/Assignment4/bdtBad3.c:489:12175:beg:0x402724
++next
+/u/cos217/Assignment4/bdtBad3.c:490:12193:beg:0x402728
++next
+main () at bdt_client.c:94
+/u/eagarwal/Assignment-4/1BDT/bdt_client.c:94:3856:beg:0x402fa0
++next
+/u/eagarwal/Assignment-4/1BDT/bdt_client.c:95:3889:beg:0x402fbc
++next
+/u/eagarwal/Assignment-4/1BDT/bdt_client.c:96:3903:beg:0x402fc4
++next
+/u/eagarwal/Assignment-4/1BDT/bdt_client.c:97:3943:beg:0x402ff8
++break 96
+Breakpoint 1 at 0x402fc4: file bdt_client.c, line 96.
++run
+Starting program: /u/eagarwal/Assignment-4/1BDT/bdtBad3 
+
+Breakpoint 1, main () at bdt_client.c:96
+/u/eagarwal/Assignment-4/1BDT/bdt_client.c:96:3903:beg:0x402fc4
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-222.sd7.aarch64
++step
+BDT_rmPath (path=0x403738 "a/b") at bdtBad3.c:381
+/u/cos217/Assignment4/bdtBad3.c:381:9423:beg:0x40236c
++step
+/u/cos217/Assignment4/bdtBad3.c:383:9449:beg:0x402398
++step
+/u/cos217/Assignment4/bdtBad3.c:386:9507:beg:0x4023b4
++step
+BDT_traversePath (path=0x403738 "a/b") at bdtBad3.c:140
+/u/cos217/Assignment4/bdtBad3.c:140:3870:beg:0x401db4
++step
+/u/cos217/Assignment4/bdtBad3.c:141:3895:beg:0x401de0
++step
+BDT_traversePathFrom (path=0x403738 "a/b", curr=0x430070) at bdtBad3.c:106
+/u/cos217/Assignment4/bdtBad3.c:106:2824:beg:0x401cbc
++step
+/u/cos217/Assignment4/bdtBad3.c:109:2884:beg:0x401ce8
++step
+/u/cos217/Assignment4/bdtBad3.c:113:2968:beg:0x401cfc
++step
+/u/cos217/Assignment4/bdtBad3.c:117:3083:beg:0x401d1c
++step
+/u/cos217/Assignment4/bdtBad3.c:119:3178:beg:0x401d48
++step
+BDT_traversePathFrom (path=0x403738 "a/b", curr=0x4300a0) at bdtBad3.c:106
+/u/cos217/Assignment4/bdtBad3.c:106:2824:beg:0x401cbc
++step
+/u/cos217/Assignment4/bdtBad3.c:109:2884:beg:0x401ce8
++step
+/u/cos217/Assignment4/bdtBad3.c:113:2968:beg:0x401cfc
++step
+/u/cos217/Assignment4/bdtBad3.c:114:3005:beg:0x401d14
++step
+/u/cos217/Assignment4/bdtBad3.c:132:3655:beg:0x401d9c
++step
+/u/cos217/Assignment4/bdtBad3.c:121:3295:beg:0x401d5c
++step
+/u/cos217/Assignment4/bdtBad3.c:128:3577:beg:0x401d90
++step
+/u/cos217/Assignment4/bdtBad3.c:132:3655:beg:0x401d9c
++step
+BDT_traversePath (path=0x403738 "a/b") at bdtBad3.c:142
+/u/cos217/Assignment4/bdtBad3.c:142:3939:beg:0x401df4
++step
+BDT_rmPath (path=0x403738 "a/b") at bdtBad3.c:387
+/u/cos217/Assignment4/bdtBad3.c:387:9541:beg:0x4023c0
++step
+/u/cos217/Assignment4/bdtBad3.c:390:9589:beg:0x4023d4
++step
+BDT_rmPathAt (path=0x403738 "a/b", curr=0x4300a0) at bdtBad3.c:359
+/u/cos217/Assignment4/bdtBad3.c:359:8976:beg:0x4022a0
++step
+/u/cos217/Assignment4/bdtBad3.c:360:9001:beg:0x4022cc
++step
+/u/cos217/Assignment4/bdtBad3.c:362:9027:beg:0x4022f8
++step
+/u/cos217/Assignment4/bdtBad3.c:364:9054:beg:0x402304
++step
+/u/cos217/Assignment4/bdtBad3.c:365:9112:beg:0x40231c
++step
+/u/cos217/Assignment4/bdtBad3.c:368:9170:beg:0x402338
++step
+BDT_unlinkParentToChild (parent=0x430070, child=0x4300a0) at bdtBad3.c:201
+/u/cos217/Assignment4/bdtBad3.c:201:5396:beg:0x401f0c
++step
+/u/cos217/Assignment4/bdtBad3.c:203:5424:beg:0x401f38
++step
+/u/cos217/Assignment4/bdtBad3.c:204:5457:beg:0x401f4c
++step
+/u/cos217/Assignment4/bdtBad3.c:212:5605:beg:0x401f80
++step
+/u/cos217/Assignment4/bdtBad3.c:214:5625:beg:0x401f84
++step
+BDT_rmPathAt (path=0x403738 "a/b", curr=0x4300a0) at bdtBad3.c:370
+/u/cos217/Assignment4/bdtBad3.c:370:9219:beg:0x402344
++step
+BDT_removePathFrom (curr=0x4300a0) at bdtBad3.c:150
+/u/cos217/Assignment4/bdtBad3.c:150:4147:beg:0x401e08
++step
+/u/cos217/Assignment4/bdtBad3.c:151:4169:beg:0x401e14
++step
+BDT_removePathFrom (curr=0x4300d0) at bdtBad3.c:150
+/u/cos217/Assignment4/bdtBad3.c:150:4147:beg:0x401e08
++step
+/u/cos217/Assignment4/bdtBad3.c:151:4169:beg:0x401e14
++step
+BDT_removePathFrom (curr=0x0) at bdtBad3.c:150
+/u/cos217/Assignment4/bdtBad3.c:150:4147:beg:0x401e08
++step
+/u/cos217/Assignment4/bdtBad3.c:157:4311:beg:0x401e5c
++step
+BDT_removePathFrom (curr=0x4300d0) at bdtBad3.c:152
+/u/cos217/Assignment4/bdtBad3.c:152:4209:beg:0x401e20
++step
+BDT_removePathFrom (curr=0x0) at bdtBad3.c:150
+/u/cos217/Assignment4/bdtBad3.c:150:4147:beg:0x401e08
++step
+/u/cos217/Assignment4/bdtBad3.c:157:4311:beg:0x401e5c
++step
+BDT_removePathFrom (curr=0x4300d0) at bdtBad3.c:153
+/u/cos217/Assignment4/bdtBad3.c:153:4249:beg:0x401e2c
++step
+/u/cos217/Assignment4/bdtBad3.c:154:4273:beg:0x401e38
++step
+/u/cos217/Assignment4/bdtBad3.c:155:4291:beg:0x401e40
++step
+/u/cos217/Assignment4/bdtBad3.c:157:4311:beg:0x401e5c
++step
+BDT_removePathFrom (curr=0x4300a0) at bdtBad3.c:152
+/u/cos217/Assignment4/bdtBad3.c:152:4209:beg:0x401e20
++step
+BDT_removePathFrom (curr=0x430160) at bdtBad3.c:150
+/u/cos217/Assignment4/bdtBad3.c:150:4147:beg:0x401e08
++step
+/u/cos217/Assignment4/bdtBad3.c:151:4169:beg:0x401e14
++step
+BDT_removePathFrom (curr=0x0) at bdtBad3.c:150
+/u/cos217/Assignment4/bdtBad3.c:150:4147:beg:0x401e08
++step
+/u/cos217/Assignment4/bdtBad3.c:157:4311:beg:0x401e5c
++step
+BDT_removePathFrom (curr=0x430160) at bdtBad3.c:152
+/u/cos217/Assignment4/bdtBad3.c:152:4209:beg:0x401e20
++step
+BDT_removePathFrom (curr=0x0) at bdtBad3.c:150
+/u/cos217/Assignment4/bdtBad3.c:150:4147:beg:0x401e08
++step
+/u/cos217/Assignment4/bdtBad3.c:157:4311:beg:0x401e5c
++step
+BDT_removePathFrom (curr=0x430160) at bdtBad3.c:153
+/u/cos217/Assignment4/bdtBad3.c:153:4249:beg:0x401e2c
++step
+/u/cos217/Assignment4/bdtBad3.c:154:4273:beg:0x401e38
++step
+/u/cos217/Assignment4/bdtBad3.c:155:4291:beg:0x401e40
++step
+/u/cos217/Assignment4/bdtBad3.c:157:4311:beg:0x401e5c
++step
+BDT_removePathFrom (curr=0x4300a0) at bdtBad3.c:153
+/u/cos217/Assignment4/bdtBad3.c:153:4249:beg:0x401e2c
++step
+/u/cos217/Assignment4/bdtBad3.c:154:4273:beg:0x401e38
++step
+/u/cos217/Assignment4/bdtBad3.c:155:4291:beg:0x401e40
++step
+/u/cos217/Assignment4/bdtBad3.c:157:4311:beg:0x401e5c
++step
+BDT_rmPathAt (path=0x403738 "a/b", curr=0x4300a0) at bdtBad3.c:371
+/u/cos217/Assignment4/bdtBad3.c:371:9251:beg:0x40234c
++step
+/u/cos217/Assignment4/bdtBad3.c:375:9342:beg:0x402358
++step
+BDT_rmPath (path=0x403738 "a/b") at bdtBad3.c:391
+/u/cos217/Assignment4/bdtBad3.c:391:9625:beg:0x4023e0
++step
+main () at bdt_client.c:97
+/u/eagarwal/Assignment-4/1BDT/bdt_client.c:97:3943:beg:0x402ff8
++next
+/u/eagarwal/Assignment-4/1BDT/bdt_client.c:98:3987:beg:0x40302c
++next
+/u/eagarwal/Assignment-4/1BDT/bdt_client.c:99:4030:beg:0x403060
++next
+/u/eagarwal/Assignment-4/1BDT/bdt_client.c:100:4063:beg:0x40307c
++next
+/u/eagarwal/Assignment-4/1BDT/bdt_client.c:102:4078:beg:0x403084
++next
+/u/eagarwal/Assignment-4/1BDT/bdt_client.c:103:4114:beg:0x4030b0
++next
+/u/eagarwal/Assignment-4/1BDT/bdt_client.c:104:4163:beg:0x4030dc
++next
+/u/eagarwal/Assignment-4/1BDT/bdt_client.c:106:4206:beg:0x403110
++next
+/u/eagarwal/Assignment-4/1BDT/bdt_client.c:107:4218:beg:0x403114
++next
+0x0000ffffbe5e15d4 in __libc_start_main () from /lib64/libc.so.6
++next
+Single stepping until exit from function __libc_start_main,
+which has no line number information.
+[Inferior 1 (process 22969) exited normally]

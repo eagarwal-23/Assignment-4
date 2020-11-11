@@ -1,0 +1,1596 @@
++run
+The program being debugged has been started already.
+Start it from the beginning? (y or n) 
+Starting program: /u/eagarwal/Assignment-4/1BDT/bdtBad1 
+
+Program received signal SIGABRT, Aborted.
+0x0000ffffbe5f50e8 in raise () from /lib64/libc.so.6
++break 22
+Breakpoint 1 at 0x40272c: file bdt_client.c, line 22.
++k
+Kill the program being debugged? (y or n) +run
+Starting program: /u/eagarwal/Assignment-4/1BDT/bdtBad1 
+
+Breakpoint 1, main () at bdt_client.c:22
+/u/eagarwal/Assignment-4/1BDT/bdt_client.c:22:814:beg:0x40272c
++step
+BDT_insertPath (path=0x4035f0 "a/b/c") at bdtBad1.c:320
+/u/cos217/Assignment4/bdtBad1.c:320:8155:beg:0x402198
++step
+/u/cos217/Assignment4/bdtBad1.c:322:8181:beg:0x4021c4
++step
+BDT_traversePath (path=0x4035f0 "a/b/c") at bdtBad1.c:140
+/u/cos217/Assignment4/bdtBad1.c:140:3870:beg:0x401db4
++run
+Starting program: /u/eagarwal/Assignment-4/1BDT/bdtBad1 
+
+Program received signal SIGABRT, Aborted.
+0x0000ffffbe5f50e8 in raise () from /lib64/libc.so.6
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-222.sd7.aarch64
++where
+#0  0x0000ffffbe5f50e8 in raise () from /lib64/libc.so.6
+#1  0x0000ffffbe5f6760 in abort () from /lib64/libc.so.6
+#2  0x0000ffffbe5ee5dc in __assert_fail_base () from /lib64/libc.so.6
+#3  0x0000ffffbe5ee694 in __assert_fail () from /lib64/libc.so.6
+#4  0x0000000000402760 in main () at bdt_client.c:22
++break 22
+Breakpoint 1 at 0x40272c: file bdt_client.c, line 22.
++run
+The program being debugged has been started already.
+Start it from the beginning? (y or n) 
+Starting program: /u/eagarwal/Assignment-4/1BDT/bdtBad1 
+
+Breakpoint 1, main () at bdt_client.c:22
+/u/eagarwal/Assignment-4/1BDT/bdt_client.c:22:814:beg:0x40272c
++step
+BDT_insertPath (path=0x4035f0 "a/b/c") at bdtBad1.c:320
+/u/cos217/Assignment4/bdtBad1.c:320:8155:beg:0x402198
++step
+/u/cos217/Assignment4/bdtBad1.c:322:8181:beg:0x4021c4
++step
+BDT_traversePath (path=0x4035f0 "a/b/c") at bdtBad1.c:140
+/u/cos217/Assignment4/bdtBad1.c:140:3870:beg:0x401db4
++step
+/u/cos217/Assignment4/bdtBad1.c:141:3895:beg:0x401de0
++step
+BDT_traversePathFrom (path=0x4035f0 "a/b/c", curr=0x0) at bdtBad1.c:106
+/u/cos217/Assignment4/bdtBad1.c:106:2824:beg:0x401cbc
++(gdb) 
+Undefined command: "".  Try "help".
++step
+/u/cos217/Assignment4/bdtBad1.c:109:2884:beg:0x401ce8
++step
+/u/cos217/Assignment4/bdtBad1.c:110:2904:beg:0x401cf4
++step
+/u/cos217/Assignment4/bdtBad1.c:132:3655:beg:0x401d9c
++step
+BDT_traversePath (path=0x4035f0 "a/b/c") at bdtBad1.c:142
+/u/cos217/Assignment4/bdtBad1.c:142:3939:beg:0x401df4
++step
+BDT_insertPath (path=0x4035f0 "a/b/c") at bdtBad1.c:323
+/u/cos217/Assignment4/bdtBad1.c:323:8215:beg:0x4021d0
++step
+BDT_insertRestOfPath (path=0x4035f0 "a/b/c", parent=0x0) at bdtBad1.c:237
+/u/cos217/Assignment4/bdtBad1.c:237:6252:beg:0x401fac
++step
+/u/cos217/Assignment4/bdtBad1.c:238:6275:beg:0x401fb4
++step
+/u/cos217/Assignment4/bdtBad1.c:241:6332:beg:0x401fb8
++step
+/u/cos217/Assignment4/bdtBad1.c:245:6393:beg:0x401fc0
++step
+/u/cos217/Assignment4/bdtBad1.c:247:6419:beg:0x401fec
++step
+/u/cos217/Assignment4/bdtBad1.c:248:6441:beg:0x401ff8
++step
+/u/cos217/Assignment4/bdtBad1.c:265:6884:beg:0x402050
++step
+/u/cos217/Assignment4/bdtBad1.c:266:6926:beg:0x402064
++step
+/u/cos217/Assignment4/bdtBad1.c:268:6977:beg:0x402078
++step
+/u/cos217/Assignment4/bdtBad1.c:269:7008:beg:0x402084
++step
+/u/cos217/Assignment4/bdtBad1.c:271:7046:beg:0x402098
++step
+/u/cos217/Assignment4/bdtBad1.c:272:7075:beg:0x40209c
++step
+BDT_newNode (parent=0x0, dir=0x430010 "a") at bdtBad1.c:64
+/u/cos217/Assignment4/bdtBad1.c:64:1912:beg:0x401b40
++step
+/u/cos217/Assignment4/bdtBad1.c:66:1937:beg:0x401b6c
++step
+/u/cos217/Assignment4/bdtBad1.c:67:1975:beg:0x401b78
++step
+/u/cos217/Assignment4/bdtBad1.c:70:2014:beg:0x401b8c
++step
+/u/cos217/Assignment4/bdtBad1.c:71:2036:beg:0x401b98
++step
+/u/cos217/Assignment4/bdtBad1.c:74:2163:beg:0x401bec
++step
+/u/cos217/Assignment4/bdtBad1.c:79:2232:beg:0x401c0c
++step
+/u/cos217/Assignment4/bdtBad1.c:84:2329:beg:0x401c50
++step
+/u/cos217/Assignment4/bdtBad1.c:85:2355:beg:0x401c60
++step
+/u/cos217/Assignment4/bdtBad1.c:86:2380:beg:0x401c6c
++step
+/u/cos217/Assignment4/bdtBad1.c:87:2403:beg:0x401c74
++step
+/u/cos217/Assignment4/bdtBad1.c:89:2427:beg:0x401c7c
++step
+/u/cos217/Assignment4/bdtBad1.c:91:2440:beg:0x401c98
++step
+/u/cos217/Assignment4/bdtBad1.c:92:2455:beg:0x401c9c
++step
+BDT_insertRestOfPath (path=0x4035f0 "a/b/c", parent=0x0) at bdtBad1.c:277
+/u/cos217/Assignment4/bdtBad1.c:277:7255:beg:0x4020ac
++step
+/u/cos217/Assignment4/bdtBad1.c:278:7282:beg:0x4020b8
++step
+/u/cos217/Assignment4/bdtBad1.c:289:7559:beg:0x402100
++step
+/u/cos217/Assignment4/bdtBad1.c:295:7686:beg:0x402124
++step
+/u/cos217/Assignment4/bdtBad1.c:296:7704:beg:0x40212c
++step
+/u/cos217/Assignment4/bdtBad1.c:271:7046:beg:0x402140
++step
+/u/cos217/Assignment4/bdtBad1.c:272:7075:beg:0x40209c
++step
+BDT_newNode (parent=0x430030, dir=0x430012 "b") at bdtBad1.c:64
+/u/cos217/Assignment4/bdtBad1.c:64:1912:beg:0x401b40
++step
+/u/cos217/Assignment4/bdtBad1.c:66:1937:beg:0x401b6c
++step
+/u/cos217/Assignment4/bdtBad1.c:67:1975:beg:0x401b78
++step
+/u/cos217/Assignment4/bdtBad1.c:70:2014:beg:0x401b8c
++step
+/u/cos217/Assignment4/bdtBad1.c:73:2099:beg:0x401bbc
++step
+/u/cos217/Assignment4/bdtBad1.c:74:2163:beg:0x401bec
++step
+/u/cos217/Assignment4/bdtBad1.c:79:2232:beg:0x401c0c
++step
+/u/cos217/Assignment4/bdtBad1.c:80:2256:beg:0x401c18
++step
+/u/cos217/Assignment4/bdtBad1.c:81:2294:beg:0x401c2c
++step
+/u/cos217/Assignment4/bdtBad1.c:84:2329:beg:0x401c50
++step
+/u/cos217/Assignment4/bdtBad1.c:85:2355:beg:0x401c60
++step
+/u/cos217/Assignment4/bdtBad1.c:86:2380:beg:0x401c6c
++step
+/u/cos217/Assignment4/bdtBad1.c:87:2403:beg:0x401c74
++step
+/u/cos217/Assignment4/bdtBad1.c:89:2427:beg:0x401c7c
++step
+/u/cos217/Assignment4/bdtBad1.c:91:2440:beg:0x401c98
++step
+/u/cos217/Assignment4/bdtBad1.c:92:2455:beg:0x401c9c
++step
+BDT_insertRestOfPath (path=0x4035f0 "a/b/c", parent=0x0) at bdtBad1.c:277
+/u/cos217/Assignment4/bdtBad1.c:277:7255:beg:0x4020ac
++step
+/u/cos217/Assignment4/bdtBad1.c:280:7320:beg:0x4020c4
++step
+BDT_linkParentToChild (parent=0x430030, child=0x430080) at bdtBad1.c:171
+/u/cos217/Assignment4/bdtBad1.c:171:4654:beg:0x401e74
++step
+/u/cos217/Assignment4/bdtBad1.c:173:4682:beg:0x401ea0
++step
+/u/cos217/Assignment4/bdtBad1.c:174:4712:beg:0x401eb0
++step
+/u/cos217/Assignment4/bdtBad1.c:182:4889:beg:0x401ef0
++step
+/u/cos217/Assignment4/bdtBad1.c:184:4909:beg:0x401ef4
++step
+BDT_insertRestOfPath (path=0x4035f0 "a/b/c", parent=0x0) at bdtBad1.c:281
+/u/cos217/Assignment4/bdtBad1.c:281:7372:beg:0x4020d4
++step
+/u/cos217/Assignment4/bdtBad1.c:289:7559:beg:0x402100
++step
+/u/cos217/Assignment4/bdtBad1.c:295:7686:beg:0x402124
++step
+/u/cos217/Assignment4/bdtBad1.c:296:7704:beg:0x40212c
++step
+/u/cos217/Assignment4/bdtBad1.c:271:7046:beg:0x402140
++step
+/u/cos217/Assignment4/bdtBad1.c:272:7075:beg:0x40209c
++step
+BDT_newNode (parent=0x430080, dir=0x430014 "c") at bdtBad1.c:64
+/u/cos217/Assignment4/bdtBad1.c:64:1912:beg:0x401b40
++step
+/u/cos217/Assignment4/bdtBad1.c:66:1937:beg:0x401b6c
++step
+/u/cos217/Assignment4/bdtBad1.c:67:1975:beg:0x401b78
++step
+/u/cos217/Assignment4/bdtBad1.c:70:2014:beg:0x401b8c
++step
+/u/cos217/Assignment4/bdtBad1.c:73:2099:beg:0x401bbc
++step
+/u/cos217/Assignment4/bdtBad1.c:74:2163:beg:0x401bec
++step
+/u/cos217/Assignment4/bdtBad1.c:79:2232:beg:0x401c0c
++step
+/u/cos217/Assignment4/bdtBad1.c:80:2256:beg:0x401c18
++step
+/u/cos217/Assignment4/bdtBad1.c:81:2294:beg:0x401c2c
++step
+/u/cos217/Assignment4/bdtBad1.c:84:2329:beg:0x401c50
++step
+/u/cos217/Assignment4/bdtBad1.c:85:2355:beg:0x401c60
++step
+/u/cos217/Assignment4/bdtBad1.c:86:2380:beg:0x401c6c
++step
+/u/cos217/Assignment4/bdtBad1.c:87:2403:beg:0x401c74
++step
+/u/cos217/Assignment4/bdtBad1.c:89:2427:beg:0x401c7c
++step
+/u/cos217/Assignment4/bdtBad1.c:91:2440:beg:0x401c98
++step
+/u/cos217/Assignment4/bdtBad1.c:92:2455:beg:0x401c9c
++step
+BDT_insertRestOfPath (path=0x4035f0 "a/b/c", parent=0x0) at bdtBad1.c:277
+/u/cos217/Assignment4/bdtBad1.c:277:7255:beg:0x4020ac
++step
+/u/cos217/Assignment4/bdtBad1.c:280:7320:beg:0x4020c4
++step
+BDT_linkParentToChild (parent=0x430080, child=0x4300d0) at bdtBad1.c:171
+/u/cos217/Assignment4/bdtBad1.c:171:4654:beg:0x401e74
++step
+/u/cos217/Assignment4/bdtBad1.c:173:4682:beg:0x401ea0
++step
+/u/cos217/Assignment4/bdtBad1.c:174:4712:beg:0x401eb0
++step
+/u/cos217/Assignment4/bdtBad1.c:182:4889:beg:0x401ef0
++step
+/u/cos217/Assignment4/bdtBad1.c:184:4909:beg:0x401ef4
++step
+BDT_insertRestOfPath (path=0x4035f0 "a/b/c", parent=0x0) at bdtBad1.c:281
+/u/cos217/Assignment4/bdtBad1.c:281:7372:beg:0x4020d4
++step
+/u/cos217/Assignment4/bdtBad1.c:289:7559:beg:0x402100
++step
+/u/cos217/Assignment4/bdtBad1.c:295:7686:beg:0x402124
++step
+/u/cos217/Assignment4/bdtBad1.c:296:7704:beg:0x40212c
++step
+/u/cos217/Assignment4/bdtBad1.c:271:7046:beg:0x402140
++step
+/u/cos217/Assignment4/bdtBad1.c:299:7746:beg:0x40214c
++step
+/u/cos217/Assignment4/bdtBad1.c:306:7926:beg:0x402154
++step
+/u/cos217/Assignment4/bdtBad1.c:307:7950:beg:0x402160
++step
+/u/cos217/Assignment4/bdtBad1.c:308:7973:beg:0x402170
++step
+/u/cos217/Assignment4/bdtBad1.c:313:8069:beg:0x402184
++step
+BDT_insertPath (path=0x4035f0 "a/b/c") at bdtBad1.c:324
+/u/cos217/Assignment4/bdtBad1.c:324:8259:beg:0x4021dc
++step
+
+Program received signal SIGABRT, Aborted.
+0x0000ffffbe5f50e8 in raise () from /lib64/libc.so.6
++step
+Single stepping until exit from function raise,
+which has no line number information.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
++step
+The program is not being run.
++step
+The program is not being run.
++run
+Starting program: /u/eagarwal/Assignment-4/1BDT/bdtBad1 
+
+Program received signal SIGABRT, Aborted.
+0x0000ffffbe5f50e8 in raise () from /lib64/libc.so.6
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-222.sd7.aarch64
++break 22
+Breakpoint 1 at 0x40272c: file bdt_client.c, line 22.
++run
+The program being debugged has been started already.
+Start it from the beginning? (y or n) 
+Starting program: /u/eagarwal/Assignment-4/1BDT/bdtBad1 
+
+Breakpoint 1, main () at bdt_client.c:22
+/u/eagarwal/Assignment-4/1BDT/bdt_client.c:22:814:beg:0x40272c
++step
+BDT_insertPath (path=0x4035f0 "a/b/c") at bdtBad1.c:320
+/u/cos217/Assignment4/bdtBad1.c:320:8155:beg:0x402198
++step
+/u/cos217/Assignment4/bdtBad1.c:322:8181:beg:0x4021c4
++step
+BDT_traversePath (path=0x4035f0 "a/b/c") at bdtBad1.c:140
+/u/cos217/Assignment4/bdtBad1.c:140:3870:beg:0x401db4
++step
+/u/cos217/Assignment4/bdtBad1.c:141:3895:beg:0x401de0
++step
+BDT_traversePathFrom (path=0x4035f0 "a/b/c", curr=0x0) at bdtBad1.c:106
+/u/cos217/Assignment4/bdtBad1.c:106:2824:beg:0x401cbc
++step
+/u/cos217/Assignment4/bdtBad1.c:109:2884:beg:0x401ce8
++step
+/u/cos217/Assignment4/bdtBad1.c:110:2904:beg:0x401cf4
++step
+/u/cos217/Assignment4/bdtBad1.c:132:3655:beg:0x401d9c
++step
+BDT_traversePath (path=0x4035f0 "a/b/c") at bdtBad1.c:142
+/u/cos217/Assignment4/bdtBad1.c:142:3939:beg:0x401df4
++step
+BDT_insertPath (path=0x4035f0 "a/b/c") at bdtBad1.c:323
+/u/cos217/Assignment4/bdtBad1.c:323:8215:beg:0x4021d0
++step
+BDT_insertRestOfPath (path=0x4035f0 "a/b/c", parent=0x0) at bdtBad1.c:237
+/u/cos217/Assignment4/bdtBad1.c:237:6252:beg:0x401fac
++step
+/u/cos217/Assignment4/bdtBad1.c:238:6275:beg:0x401fb4
++step
+/u/cos217/Assignment4/bdtBad1.c:241:6332:beg:0x401fb8
++step
+/u/cos217/Assignment4/bdtBad1.c:245:6393:beg:0x401fc0
++step
+/u/cos217/Assignment4/bdtBad1.c:247:6419:beg:0x401fec
++step
+/u/cos217/Assignment4/bdtBad1.c:248:6441:beg:0x401ff8
++step
+/u/cos217/Assignment4/bdtBad1.c:265:6884:beg:0x402050
++step
+/u/cos217/Assignment4/bdtBad1.c:266:6926:beg:0x402064
++step
+/u/cos217/Assignment4/bdtBad1.c:268:6977:beg:0x402078
++step
+/u/cos217/Assignment4/bdtBad1.c:269:7008:beg:0x402084
++step
+/u/cos217/Assignment4/bdtBad1.c:271:7046:beg:0x402098
++step
+/u/cos217/Assignment4/bdtBad1.c:272:7075:beg:0x40209c
++step
+BDT_newNode (parent=0x0, dir=0x430010 "a") at bdtBad1.c:64
+/u/cos217/Assignment4/bdtBad1.c:64:1912:beg:0x401b40
++step
+/u/cos217/Assignment4/bdtBad1.c:66:1937:beg:0x401b6c
++step
+/u/cos217/Assignment4/bdtBad1.c:67:1975:beg:0x401b78
++step
+/u/cos217/Assignment4/bdtBad1.c:70:2014:beg:0x401b8c
++step
+/u/cos217/Assignment4/bdtBad1.c:71:2036:beg:0x401b98
++step
+/u/cos217/Assignment4/bdtBad1.c:74:2163:beg:0x401bec
++step
+/u/cos217/Assignment4/bdtBad1.c:79:2232:beg:0x401c0c
++step
+/u/cos217/Assignment4/bdtBad1.c:84:2329:beg:0x401c50
++step
+/u/cos217/Assignment4/bdtBad1.c:85:2355:beg:0x401c60
++step
+/u/cos217/Assignment4/bdtBad1.c:86:2380:beg:0x401c6c
++step
+/u/cos217/Assignment4/bdtBad1.c:87:2403:beg:0x401c74
++step
+/u/cos217/Assignment4/bdtBad1.c:89:2427:beg:0x401c7c
++step
+/u/cos217/Assignment4/bdtBad1.c:91:2440:beg:0x401c98
++step
+/u/cos217/Assignment4/bdtBad1.c:92:2455:beg:0x401c9c
++step
+BDT_insertRestOfPath (path=0x4035f0 "a/b/c", parent=0x0) at bdtBad1.c:277
+/u/cos217/Assignment4/bdtBad1.c:277:7255:beg:0x4020ac
++step
+/u/cos217/Assignment4/bdtBad1.c:278:7282:beg:0x4020b8
++step
+/u/cos217/Assignment4/bdtBad1.c:289:7559:beg:0x402100
++step
+/u/cos217/Assignment4/bdtBad1.c:295:7686:beg:0x402124
++step
+/u/cos217/Assignment4/bdtBad1.c:296:7704:beg:0x40212c
++step
+/u/cos217/Assignment4/bdtBad1.c:271:7046:beg:0x402140
++step
+/u/cos217/Assignment4/bdtBad1.c:272:7075:beg:0x40209c
++step
+BDT_newNode (parent=0x430030, dir=0x430012 "b") at bdtBad1.c:64
+/u/cos217/Assignment4/bdtBad1.c:64:1912:beg:0x401b40
++step
+/u/cos217/Assignment4/bdtBad1.c:66:1937:beg:0x401b6c
++step
+/u/cos217/Assignment4/bdtBad1.c:67:1975:beg:0x401b78
++step
+/u/cos217/Assignment4/bdtBad1.c:70:2014:beg:0x401b8c
++step
+/u/cos217/Assignment4/bdtBad1.c:73:2099:beg:0x401bbc
++step
+/u/cos217/Assignment4/bdtBad1.c:74:2163:beg:0x401bec
++step
+/u/cos217/Assignment4/bdtBad1.c:79:2232:beg:0x401c0c
++step
+/u/cos217/Assignment4/bdtBad1.c:80:2256:beg:0x401c18
++step
+/u/cos217/Assignment4/bdtBad1.c:81:2294:beg:0x401c2c
++step
+/u/cos217/Assignment4/bdtBad1.c:84:2329:beg:0x401c50
++step
+/u/cos217/Assignment4/bdtBad1.c:85:2355:beg:0x401c60
++step
+/u/cos217/Assignment4/bdtBad1.c:86:2380:beg:0x401c6c
++step
+/u/cos217/Assignment4/bdtBad1.c:87:2403:beg:0x401c74
++step
+/u/cos217/Assignment4/bdtBad1.c:89:2427:beg:0x401c7c
++step
+/u/cos217/Assignment4/bdtBad1.c:91:2440:beg:0x401c98
++step
+/u/cos217/Assignment4/bdtBad1.c:92:2455:beg:0x401c9c
++step
+BDT_insertRestOfPath (path=0x4035f0 "a/b/c", parent=0x0) at bdtBad1.c:277
+/u/cos217/Assignment4/bdtBad1.c:277:7255:beg:0x4020ac
++step
+/u/cos217/Assignment4/bdtBad1.c:280:7320:beg:0x4020c4
++step
+BDT_linkParentToChild (parent=0x430030, child=0x430080) at bdtBad1.c:171
+/u/cos217/Assignment4/bdtBad1.c:171:4654:beg:0x401e74
++step
+/u/cos217/Assignment4/bdtBad1.c:173:4682:beg:0x401ea0
++step
+/u/cos217/Assignment4/bdtBad1.c:174:4712:beg:0x401eb0
++step
+/u/cos217/Assignment4/bdtBad1.c:182:4889:beg:0x401ef0
++step
+/u/cos217/Assignment4/bdtBad1.c:184:4909:beg:0x401ef4
++step
+BDT_insertRestOfPath (path=0x4035f0 "a/b/c", parent=0x0) at bdtBad1.c:281
+/u/cos217/Assignment4/bdtBad1.c:281:7372:beg:0x4020d4
++step
+/u/cos217/Assignment4/bdtBad1.c:289:7559:beg:0x402100
++step
+/u/cos217/Assignment4/bdtBad1.c:295:7686:beg:0x402124
++step
+/u/cos217/Assignment4/bdtBad1.c:296:7704:beg:0x40212c
++step
+/u/cos217/Assignment4/bdtBad1.c:271:7046:beg:0x402140
++step
+/u/cos217/Assignment4/bdtBad1.c:272:7075:beg:0x40209c
++step
+BDT_newNode (parent=0x430080, dir=0x430014 "c") at bdtBad1.c:64
+/u/cos217/Assignment4/bdtBad1.c:64:1912:beg:0x401b40
++step
+/u/cos217/Assignment4/bdtBad1.c:66:1937:beg:0x401b6c
++step
+/u/cos217/Assignment4/bdtBad1.c:67:1975:beg:0x401b78
++step
+/u/cos217/Assignment4/bdtBad1.c:70:2014:beg:0x401b8c
++step
+/u/cos217/Assignment4/bdtBad1.c:73:2099:beg:0x401bbc
++step
+/u/cos217/Assignment4/bdtBad1.c:74:2163:beg:0x401bec
++step
+/u/cos217/Assignment4/bdtBad1.c:79:2232:beg:0x401c0c
++step
+/u/cos217/Assignment4/bdtBad1.c:80:2256:beg:0x401c18
++step
+/u/cos217/Assignment4/bdtBad1.c:81:2294:beg:0x401c2c
++step
+/u/cos217/Assignment4/bdtBad1.c:84:2329:beg:0x401c50
++step
+/u/cos217/Assignment4/bdtBad1.c:85:2355:beg:0x401c60
++step
+/u/cos217/Assignment4/bdtBad1.c:86:2380:beg:0x401c6c
++step
+/u/cos217/Assignment4/bdtBad1.c:87:2403:beg:0x401c74
++step
+/u/cos217/Assignment4/bdtBad1.c:89:2427:beg:0x401c7c
++step
+/u/cos217/Assignment4/bdtBad1.c:91:2440:beg:0x401c98
++step
+/u/cos217/Assignment4/bdtBad1.c:92:2455:beg:0x401c9c
++step
+BDT_insertRestOfPath (path=0x4035f0 "a/b/c", parent=0x0) at bdtBad1.c:277
+/u/cos217/Assignment4/bdtBad1.c:277:7255:beg:0x4020ac
++step
+/u/cos217/Assignment4/bdtBad1.c:280:7320:beg:0x4020c4
++step
+BDT_linkParentToChild (parent=0x430080, child=0x4300d0) at bdtBad1.c:171
+/u/cos217/Assignment4/bdtBad1.c:171:4654:beg:0x401e74
++step
+/u/cos217/Assignment4/bdtBad1.c:173:4682:beg:0x401ea0
++step
+/u/cos217/Assignment4/bdtBad1.c:174:4712:beg:0x401eb0
++step
+/u/cos217/Assignment4/bdtBad1.c:182:4889:beg:0x401ef0
++step
+/u/cos217/Assignment4/bdtBad1.c:184:4909:beg:0x401ef4
++step
+BDT_insertRestOfPath (path=0x4035f0 "a/b/c", parent=0x0) at bdtBad1.c:281
+/u/cos217/Assignment4/bdtBad1.c:281:7372:beg:0x4020d4
++step
+/u/cos217/Assignment4/bdtBad1.c:289:7559:beg:0x402100
++step
+/u/cos217/Assignment4/bdtBad1.c:295:7686:beg:0x402124
++step
+/u/cos217/Assignment4/bdtBad1.c:296:7704:beg:0x40212c
++step
+/u/cos217/Assignment4/bdtBad1.c:271:7046:beg:0x402140
++step
+/u/cos217/Assignment4/bdtBad1.c:299:7746:beg:0x40214c
++step
+/u/cos217/Assignment4/bdtBad1.c:306:7926:beg:0x402154
++step
+/u/cos217/Assignment4/bdtBad1.c:307:7950:beg:0x402160
++step
+/u/cos217/Assignment4/bdtBad1.c:308:7973:beg:0x402170
++step
+/u/cos217/Assignment4/bdtBad1.c:313:8069:beg:0x402184
++step
+BDT_insertPath (path=0x4035f0 "a/b/c") at bdtBad1.c:324
+/u/cos217/Assignment4/bdtBad1.c:324:8259:beg:0x4021dc
++step
+
+Program received signal SIGABRT, Aborted.
+0x0000ffffbe5f50e8 in raise () from /lib64/libc.so.6
++step
+Single stepping until exit from function raise,
+which has no line number information.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
++run
+Starting program: /u/eagarwal/Assignment-4/1BDT/bdtBad1 
+
+Program received signal SIGABRT, Aborted.
+0x0000ffffbe5f50e8 in raise () from /lib64/libc.so.6
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-222.sd7.aarch64
++where
+#0  0x0000ffffbe5f50e8 in raise () from /lib64/libc.so.6
+#1  0x0000ffffbe5f6760 in abort () from /lib64/libc.so.6
+#2  0x0000ffffbe5ee5dc in __assert_fail_base () from /lib64/libc.so.6
+#3  0x0000ffffbe5ee694 in __assert_fail () from /lib64/libc.so.6
+#4  0x0000000000402760 in main () at bdt_client.c:22
++break 22
+Breakpoint 1 at 0x40272c: file bdt_client.c, line 22.
++run
+The program being debugged has been started already.
+Start it from the beginning? (y or n) 
+Starting program: /u/eagarwal/Assignment-4/1BDT/bdtBad1 
+
+Breakpoint 1, main () at bdt_client.c:22
+/u/eagarwal/Assignment-4/1BDT/bdt_client.c:22:814:beg:0x40272c
++step
+BDT_insertPath (path=0x4035f0 "a/b/c") at bdtBad1.c:320
+/u/cos217/Assignment4/bdtBad1.c:320:8155:beg:0x402198
++step
+/u/cos217/Assignment4/bdtBad1.c:322:8181:beg:0x4021c4
++step
+BDT_traversePath (path=0x4035f0 "a/b/c") at bdtBad1.c:140
+/u/cos217/Assignment4/bdtBad1.c:140:3870:beg:0x401db4
++step
+/u/cos217/Assignment4/bdtBad1.c:141:3895:beg:0x401de0
++step
+BDT_traversePathFrom (path=0x4035f0 "a/b/c", curr=0x0) at bdtBad1.c:106
+/u/cos217/Assignment4/bdtBad1.c:106:2824:beg:0x401cbc
++step
+/u/cos217/Assignment4/bdtBad1.c:109:2884:beg:0x401ce8
++step
+/u/cos217/Assignment4/bdtBad1.c:110:2904:beg:0x401cf4
++step
+/u/cos217/Assignment4/bdtBad1.c:132:3655:beg:0x401d9c
++step
+BDT_traversePath (path=0x4035f0 "a/b/c") at bdtBad1.c:142
+/u/cos217/Assignment4/bdtBad1.c:142:3939:beg:0x401df4
++step
+BDT_insertPath (path=0x4035f0 "a/b/c") at bdtBad1.c:323
+/u/cos217/Assignment4/bdtBad1.c:323:8215:beg:0x4021d0
++step
+BDT_insertRestOfPath (path=0x4035f0 "a/b/c", parent=0x0) at bdtBad1.c:237
+/u/cos217/Assignment4/bdtBad1.c:237:6252:beg:0x401fac
++step
+/u/cos217/Assignment4/bdtBad1.c:238:6275:beg:0x401fb4
++step
+/u/cos217/Assignment4/bdtBad1.c:241:6332:beg:0x401fb8
++step
+/u/cos217/Assignment4/bdtBad1.c:245:6393:beg:0x401fc0
++step
+/u/cos217/Assignment4/bdtBad1.c:247:6419:beg:0x401fec
++step
+/u/cos217/Assignment4/bdtBad1.c:248:6441:beg:0x401ff8
++step
+/u/cos217/Assignment4/bdtBad1.c:265:6884:beg:0x402050
++step
+/u/cos217/Assignment4/bdtBad1.c:266:6926:beg:0x402064
++step
+/u/cos217/Assignment4/bdtBad1.c:268:6977:beg:0x402078
++step
+/u/cos217/Assignment4/bdtBad1.c:269:7008:beg:0x402084
++step
+/u/cos217/Assignment4/bdtBad1.c:271:7046:beg:0x402098
++step
+/u/cos217/Assignment4/bdtBad1.c:272:7075:beg:0x40209c
++step
+BDT_newNode (parent=0x0, dir=0x430010 "a") at bdtBad1.c:64
+/u/cos217/Assignment4/bdtBad1.c:64:1912:beg:0x401b40
++step
+/u/cos217/Assignment4/bdtBad1.c:66:1937:beg:0x401b6c
++step
+/u/cos217/Assignment4/bdtBad1.c:67:1975:beg:0x401b78
++step
+/u/cos217/Assignment4/bdtBad1.c:70:2014:beg:0x401b8c
++step
+/u/cos217/Assignment4/bdtBad1.c:71:2036:beg:0x401b98
++step
+/u/cos217/Assignment4/bdtBad1.c:74:2163:beg:0x401bec
++step
+/u/cos217/Assignment4/bdtBad1.c:79:2232:beg:0x401c0c
++step
+/u/cos217/Assignment4/bdtBad1.c:84:2329:beg:0x401c50
++step
+/u/cos217/Assignment4/bdtBad1.c:85:2355:beg:0x401c60
++step
+/u/cos217/Assignment4/bdtBad1.c:86:2380:beg:0x401c6c
++step
+/u/cos217/Assignment4/bdtBad1.c:87:2403:beg:0x401c74
++step
+/u/cos217/Assignment4/bdtBad1.c:89:2427:beg:0x401c7c
++step
+/u/cos217/Assignment4/bdtBad1.c:91:2440:beg:0x401c98
++step
+/u/cos217/Assignment4/bdtBad1.c:92:2455:beg:0x401c9c
++step
+BDT_insertRestOfPath (path=0x4035f0 "a/b/c", parent=0x0) at bdtBad1.c:277
+/u/cos217/Assignment4/bdtBad1.c:277:7255:beg:0x4020ac
++step
+/u/cos217/Assignment4/bdtBad1.c:278:7282:beg:0x4020b8
++step
+/u/cos217/Assignment4/bdtBad1.c:289:7559:beg:0x402100
++step
+/u/cos217/Assignment4/bdtBad1.c:295:7686:beg:0x402124
++step
+/u/cos217/Assignment4/bdtBad1.c:296:7704:beg:0x40212c
++step
+/u/cos217/Assignment4/bdtBad1.c:271:7046:beg:0x402140
++step
+/u/cos217/Assignment4/bdtBad1.c:272:7075:beg:0x40209c
++step
+BDT_newNode (parent=0x430030, dir=0x430012 "b") at bdtBad1.c:64
+/u/cos217/Assignment4/bdtBad1.c:64:1912:beg:0x401b40
++step
+/u/cos217/Assignment4/bdtBad1.c:66:1937:beg:0x401b6c
++step
+/u/cos217/Assignment4/bdtBad1.c:67:1975:beg:0x401b78
++step
+/u/cos217/Assignment4/bdtBad1.c:70:2014:beg:0x401b8c
++step
+/u/cos217/Assignment4/bdtBad1.c:73:2099:beg:0x401bbc
++step
+/u/cos217/Assignment4/bdtBad1.c:74:2163:beg:0x401bec
++step
+/u/cos217/Assignment4/bdtBad1.c:79:2232:beg:0x401c0c
++step
+/u/cos217/Assignment4/bdtBad1.c:80:2256:beg:0x401c18
++step
+/u/cos217/Assignment4/bdtBad1.c:81:2294:beg:0x401c2c
++step
+/u/cos217/Assignment4/bdtBad1.c:84:2329:beg:0x401c50
++step
+/u/cos217/Assignment4/bdtBad1.c:85:2355:beg:0x401c60
++step
+/u/cos217/Assignment4/bdtBad1.c:86:2380:beg:0x401c6c
++step
+/u/cos217/Assignment4/bdtBad1.c:87:2403:beg:0x401c74
++step
+/u/cos217/Assignment4/bdtBad1.c:89:2427:beg:0x401c7c
++step
+/u/cos217/Assignment4/bdtBad1.c:91:2440:beg:0x401c98
++step
+/u/cos217/Assignment4/bdtBad1.c:92:2455:beg:0x401c9c
++step
+BDT_insertRestOfPath (path=0x4035f0 "a/b/c", parent=0x0) at bdtBad1.c:277
+/u/cos217/Assignment4/bdtBad1.c:277:7255:beg:0x4020ac
++step
+/u/cos217/Assignment4/bdtBad1.c:280:7320:beg:0x4020c4
++step
+BDT_linkParentToChild (parent=0x430030, child=0x430080) at bdtBad1.c:171
+/u/cos217/Assignment4/bdtBad1.c:171:4654:beg:0x401e74
++step
+/u/cos217/Assignment4/bdtBad1.c:173:4682:beg:0x401ea0
++step
+/u/cos217/Assignment4/bdtBad1.c:174:4712:beg:0x401eb0
++step
+/u/cos217/Assignment4/bdtBad1.c:182:4889:beg:0x401ef0
++step
+/u/cos217/Assignment4/bdtBad1.c:184:4909:beg:0x401ef4
++step
+BDT_insertRestOfPath (path=0x4035f0 "a/b/c", parent=0x0) at bdtBad1.c:281
+/u/cos217/Assignment4/bdtBad1.c:281:7372:beg:0x4020d4
++step
+/u/cos217/Assignment4/bdtBad1.c:289:7559:beg:0x402100
++step
+/u/cos217/Assignment4/bdtBad1.c:295:7686:beg:0x402124
++step
+/u/cos217/Assignment4/bdtBad1.c:296:7704:beg:0x40212c
++step
+/u/cos217/Assignment4/bdtBad1.c:271:7046:beg:0x402140
++step
+/u/cos217/Assignment4/bdtBad1.c:272:7075:beg:0x40209c
++step
+BDT_newNode (parent=0x430080, dir=0x430014 "c") at bdtBad1.c:64
+/u/cos217/Assignment4/bdtBad1.c:64:1912:beg:0x401b40
++step
+/u/cos217/Assignment4/bdtBad1.c:66:1937:beg:0x401b6c
++step
+/u/cos217/Assignment4/bdtBad1.c:67:1975:beg:0x401b78
++step
+/u/cos217/Assignment4/bdtBad1.c:70:2014:beg:0x401b8c
++step
+/u/cos217/Assignment4/bdtBad1.c:73:2099:beg:0x401bbc
++step
+/u/cos217/Assignment4/bdtBad1.c:74:2163:beg:0x401bec
++step
+/u/cos217/Assignment4/bdtBad1.c:79:2232:beg:0x401c0c
++step
+/u/cos217/Assignment4/bdtBad1.c:80:2256:beg:0x401c18
++step
+/u/cos217/Assignment4/bdtBad1.c:81:2294:beg:0x401c2c
++step
+/u/cos217/Assignment4/bdtBad1.c:84:2329:beg:0x401c50
++step
+/u/cos217/Assignment4/bdtBad1.c:85:2355:beg:0x401c60
++step
+/u/cos217/Assignment4/bdtBad1.c:86:2380:beg:0x401c6c
++step
+/u/cos217/Assignment4/bdtBad1.c:87:2403:beg:0x401c74
++step
+/u/cos217/Assignment4/bdtBad1.c:89:2427:beg:0x401c7c
++step
+/u/cos217/Assignment4/bdtBad1.c:91:2440:beg:0x401c98
++step
+/u/cos217/Assignment4/bdtBad1.c:92:2455:beg:0x401c9c
++step
+BDT_insertRestOfPath (path=0x4035f0 "a/b/c", parent=0x0) at bdtBad1.c:277
+/u/cos217/Assignment4/bdtBad1.c:277:7255:beg:0x4020ac
++step
+/u/cos217/Assignment4/bdtBad1.c:280:7320:beg:0x4020c4
++step
+BDT_linkParentToChild (parent=0x430080, child=0x4300d0) at bdtBad1.c:171
+/u/cos217/Assignment4/bdtBad1.c:171:4654:beg:0x401e74
++step
+/u/cos217/Assignment4/bdtBad1.c:173:4682:beg:0x401ea0
++step
+/u/cos217/Assignment4/bdtBad1.c:174:4712:beg:0x401eb0
++step
+/u/cos217/Assignment4/bdtBad1.c:182:4889:beg:0x401ef0
++step
+/u/cos217/Assignment4/bdtBad1.c:184:4909:beg:0x401ef4
++step
+BDT_insertRestOfPath (path=0x4035f0 "a/b/c", parent=0x0) at bdtBad1.c:281
+/u/cos217/Assignment4/bdtBad1.c:281:7372:beg:0x4020d4
++step
+/u/cos217/Assignment4/bdtBad1.c:289:7559:beg:0x402100
++step
+/u/cos217/Assignment4/bdtBad1.c:295:7686:beg:0x402124
++step
+/u/cos217/Assignment4/bdtBad1.c:296:7704:beg:0x40212c
++step
+/u/cos217/Assignment4/bdtBad1.c:271:7046:beg:0x402140
++step
+/u/cos217/Assignment4/bdtBad1.c:299:7746:beg:0x40214c
++step
+/u/cos217/Assignment4/bdtBad1.c:306:7926:beg:0x402154
++step
+/u/cos217/Assignment4/bdtBad1.c:307:7950:beg:0x402160
++step
+/u/cos217/Assignment4/bdtBad1.c:308:7973:beg:0x402170
++step
+/u/cos217/Assignment4/bdtBad1.c:313:8069:beg:0x402184
++step
+BDT_insertPath (path=0x4035f0 "a/b/c") at bdtBad1.c:324
+/u/cos217/Assignment4/bdtBad1.c:324:8259:beg:0x4021dc
++step
+
+Program received signal SIGABRT, Aborted.
+0x0000ffffbe5f50e8 in raise () from /lib64/libc.so.6
++step
+Single stepping until exit from function raise,
+which has no line number information.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
++run
+Starting program: /u/eagarwal/Assignment-4/1BDT/bdtBad1 
+
+Program received signal SIGABRT, Aborted.
+0x0000ffffbe5f50e8 in raise () from /lib64/libc.so.6
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-222.sd7.aarch64
++where
+#0  0x0000ffffbe5f50e8 in raise () from /lib64/libc.so.6
+#1  0x0000ffffbe5f6760 in abort () from /lib64/libc.so.6
+#2  0x0000ffffbe5ee5dc in __assert_fail_base () from /lib64/libc.so.6
+#3  0x0000ffffbe5ee694 in __assert_fail () from /lib64/libc.so.6
+#4  0x0000000000402760 in main () at bdt_client.c:22
++break 22
+Breakpoint 1 at 0x40272c: file bdt_client.c, line 22.
++run
+The program being debugged has been started already.
+Start it from the beginning? (y or n) 
+Starting program: /u/eagarwal/Assignment-4/1BDT/bdtBad1 
+
+Breakpoint 1, main () at bdt_client.c:22
+/u/eagarwal/Assignment-4/1BDT/bdt_client.c:22:814:beg:0x40272c
++step
+BDT_insertPath (path=0x4035f0 "a/b/c") at bdtBad1.c:320
+/u/cos217/Assignment4/bdtBad1.c:320:8155:beg:0x402198
++step
+/u/cos217/Assignment4/bdtBad1.c:322:8181:beg:0x4021c4
++step
+BDT_traversePath (path=0x4035f0 "a/b/c") at bdtBad1.c:140
+/u/cos217/Assignment4/bdtBad1.c:140:3870:beg:0x401db4
++step
+/u/cos217/Assignment4/bdtBad1.c:141:3895:beg:0x401de0
++step
+BDT_traversePathFrom (path=0x4035f0 "a/b/c", curr=0x0) at bdtBad1.c:106
+/u/cos217/Assignment4/bdtBad1.c:106:2824:beg:0x401cbc
++step
+/u/cos217/Assignment4/bdtBad1.c:109:2884:beg:0x401ce8
++step
+/u/cos217/Assignment4/bdtBad1.c:110:2904:beg:0x401cf4
++step
+/u/cos217/Assignment4/bdtBad1.c:132:3655:beg:0x401d9c
++step
+BDT_traversePath (path=0x4035f0 "a/b/c") at bdtBad1.c:142
+/u/cos217/Assignment4/bdtBad1.c:142:3939:beg:0x401df4
++step
+BDT_insertPath (path=0x4035f0 "a/b/c") at bdtBad1.c:323
+/u/cos217/Assignment4/bdtBad1.c:323:8215:beg:0x4021d0
++step
+BDT_insertRestOfPath (path=0x4035f0 "a/b/c", parent=0x0) at bdtBad1.c:237
+/u/cos217/Assignment4/bdtBad1.c:237:6252:beg:0x401fac
++step
+/u/cos217/Assignment4/bdtBad1.c:238:6275:beg:0x401fb4
++step
+/u/cos217/Assignment4/bdtBad1.c:241:6332:beg:0x401fb8
++step
+/u/cos217/Assignment4/bdtBad1.c:245:6393:beg:0x401fc0
++step
+/u/cos217/Assignment4/bdtBad1.c:247:6419:beg:0x401fec
++step
+/u/cos217/Assignment4/bdtBad1.c:248:6441:beg:0x401ff8
++step
+/u/cos217/Assignment4/bdtBad1.c:265:6884:beg:0x402050
++step
+/u/cos217/Assignment4/bdtBad1.c:266:6926:beg:0x402064
++step
+/u/cos217/Assignment4/bdtBad1.c:268:6977:beg:0x402078
++step
+/u/cos217/Assignment4/bdtBad1.c:269:7008:beg:0x402084
++step
+/u/cos217/Assignment4/bdtBad1.c:271:7046:beg:0x402098
++step
+/u/cos217/Assignment4/bdtBad1.c:272:7075:beg:0x40209c
++step
+BDT_newNode (parent=0x0, dir=0x430010 "a") at bdtBad1.c:64
+/u/cos217/Assignment4/bdtBad1.c:64:1912:beg:0x401b40
++step
+/u/cos217/Assignment4/bdtBad1.c:66:1937:beg:0x401b6c
++step
+/u/cos217/Assignment4/bdtBad1.c:67:1975:beg:0x401b78
++step
+/u/cos217/Assignment4/bdtBad1.c:70:2014:beg:0x401b8c
++step
+/u/cos217/Assignment4/bdtBad1.c:71:2036:beg:0x401b98
++step
+/u/cos217/Assignment4/bdtBad1.c:74:2163:beg:0x401bec
++step
+/u/cos217/Assignment4/bdtBad1.c:79:2232:beg:0x401c0c
++step
+/u/cos217/Assignment4/bdtBad1.c:84:2329:beg:0x401c50
++step
+/u/cos217/Assignment4/bdtBad1.c:85:2355:beg:0x401c60
++step
+/u/cos217/Assignment4/bdtBad1.c:86:2380:beg:0x401c6c
++step
+/u/cos217/Assignment4/bdtBad1.c:87:2403:beg:0x401c74
++step
+/u/cos217/Assignment4/bdtBad1.c:89:2427:beg:0x401c7c
++step
+/u/cos217/Assignment4/bdtBad1.c:91:2440:beg:0x401c98
++step
+/u/cos217/Assignment4/bdtBad1.c:92:2455:beg:0x401c9c
++step
+BDT_insertRestOfPath (path=0x4035f0 "a/b/c", parent=0x0) at bdtBad1.c:277
+/u/cos217/Assignment4/bdtBad1.c:277:7255:beg:0x4020ac
++step
+/u/cos217/Assignment4/bdtBad1.c:278:7282:beg:0x4020b8
++step
+/u/cos217/Assignment4/bdtBad1.c:289:7559:beg:0x402100
++step
+/u/cos217/Assignment4/bdtBad1.c:295:7686:beg:0x402124
++step
+/u/cos217/Assignment4/bdtBad1.c:296:7704:beg:0x40212c
++step
+/u/cos217/Assignment4/bdtBad1.c:271:7046:beg:0x402140
++step
+/u/cos217/Assignment4/bdtBad1.c:272:7075:beg:0x40209c
++step
+BDT_newNode (parent=0x430030, dir=0x430012 "b") at bdtBad1.c:64
+/u/cos217/Assignment4/bdtBad1.c:64:1912:beg:0x401b40
++step
+/u/cos217/Assignment4/bdtBad1.c:66:1937:beg:0x401b6c
++step
+/u/cos217/Assignment4/bdtBad1.c:67:1975:beg:0x401b78
++step
+/u/cos217/Assignment4/bdtBad1.c:70:2014:beg:0x401b8c
++step
+/u/cos217/Assignment4/bdtBad1.c:73:2099:beg:0x401bbc
++step
+/u/cos217/Assignment4/bdtBad1.c:74:2163:beg:0x401bec
++step
+/u/cos217/Assignment4/bdtBad1.c:79:2232:beg:0x401c0c
++step
+/u/cos217/Assignment4/bdtBad1.c:80:2256:beg:0x401c18
++step
+/u/cos217/Assignment4/bdtBad1.c:81:2294:beg:0x401c2c
++step
+/u/cos217/Assignment4/bdtBad1.c:84:2329:beg:0x401c50
++step
+/u/cos217/Assignment4/bdtBad1.c:85:2355:beg:0x401c60
++step
+/u/cos217/Assignment4/bdtBad1.c:86:2380:beg:0x401c6c
++step
+/u/cos217/Assignment4/bdtBad1.c:87:2403:beg:0x401c74
++step
+/u/cos217/Assignment4/bdtBad1.c:89:2427:beg:0x401c7c
++step
+/u/cos217/Assignment4/bdtBad1.c:91:2440:beg:0x401c98
++step
+/u/cos217/Assignment4/bdtBad1.c:92:2455:beg:0x401c9c
++step
+BDT_insertRestOfPath (path=0x4035f0 "a/b/c", parent=0x0) at bdtBad1.c:277
+/u/cos217/Assignment4/bdtBad1.c:277:7255:beg:0x4020ac
++step
+/u/cos217/Assignment4/bdtBad1.c:280:7320:beg:0x4020c4
++step
+BDT_linkParentToChild (parent=0x430030, child=0x430080) at bdtBad1.c:171
+/u/cos217/Assignment4/bdtBad1.c:171:4654:beg:0x401e74
++step
+/u/cos217/Assignment4/bdtBad1.c:173:4682:beg:0x401ea0
++step
+/u/cos217/Assignment4/bdtBad1.c:174:4712:beg:0x401eb0
++step
+/u/cos217/Assignment4/bdtBad1.c:182:4889:beg:0x401ef0
++step
+/u/cos217/Assignment4/bdtBad1.c:184:4909:beg:0x401ef4
++step
+BDT_insertRestOfPath (path=0x4035f0 "a/b/c", parent=0x0) at bdtBad1.c:281
+/u/cos217/Assignment4/bdtBad1.c:281:7372:beg:0x4020d4
++step
+/u/cos217/Assignment4/bdtBad1.c:289:7559:beg:0x402100
++step
+/u/cos217/Assignment4/bdtBad1.c:295:7686:beg:0x402124
++step
+/u/cos217/Assignment4/bdtBad1.c:296:7704:beg:0x40212c
++step
+/u/cos217/Assignment4/bdtBad1.c:271:7046:beg:0x402140
++step
+/u/cos217/Assignment4/bdtBad1.c:272:7075:beg:0x40209c
++step
+BDT_newNode (parent=0x430080, dir=0x430014 "c") at bdtBad1.c:64
+/u/cos217/Assignment4/bdtBad1.c:64:1912:beg:0x401b40
++step
+/u/cos217/Assignment4/bdtBad1.c:66:1937:beg:0x401b6c
++step
+/u/cos217/Assignment4/bdtBad1.c:67:1975:beg:0x401b78
++step
+/u/cos217/Assignment4/bdtBad1.c:70:2014:beg:0x401b8c
++step
+/u/cos217/Assignment4/bdtBad1.c:73:2099:beg:0x401bbc
++step
+/u/cos217/Assignment4/bdtBad1.c:74:2163:beg:0x401bec
++step
+/u/cos217/Assignment4/bdtBad1.c:79:2232:beg:0x401c0c
++step
+/u/cos217/Assignment4/bdtBad1.c:80:2256:beg:0x401c18
++step
+/u/cos217/Assignment4/bdtBad1.c:81:2294:beg:0x401c2c
++step
+/u/cos217/Assignment4/bdtBad1.c:84:2329:beg:0x401c50
++step
+/u/cos217/Assignment4/bdtBad1.c:85:2355:beg:0x401c60
++step
+/u/cos217/Assignment4/bdtBad1.c:86:2380:beg:0x401c6c
++step
+/u/cos217/Assignment4/bdtBad1.c:87:2403:beg:0x401c74
++step
+/u/cos217/Assignment4/bdtBad1.c:89:2427:beg:0x401c7c
++step
+/u/cos217/Assignment4/bdtBad1.c:91:2440:beg:0x401c98
++step
+/u/cos217/Assignment4/bdtBad1.c:92:2455:beg:0x401c9c
++step
+BDT_insertRestOfPath (path=0x4035f0 "a/b/c", parent=0x0) at bdtBad1.c:277
+/u/cos217/Assignment4/bdtBad1.c:277:7255:beg:0x4020ac
++step
+/u/cos217/Assignment4/bdtBad1.c:280:7320:beg:0x4020c4
++step
+BDT_linkParentToChild (parent=0x430080, child=0x4300d0) at bdtBad1.c:171
+/u/cos217/Assignment4/bdtBad1.c:171:4654:beg:0x401e74
++step
+/u/cos217/Assignment4/bdtBad1.c:173:4682:beg:0x401ea0
++step
+/u/cos217/Assignment4/bdtBad1.c:174:4712:beg:0x401eb0
++step
+/u/cos217/Assignment4/bdtBad1.c:182:4889:beg:0x401ef0
++step
+/u/cos217/Assignment4/bdtBad1.c:184:4909:beg:0x401ef4
++step
+BDT_insertRestOfPath (path=0x4035f0 "a/b/c", parent=0x0) at bdtBad1.c:281
+/u/cos217/Assignment4/bdtBad1.c:281:7372:beg:0x4020d4
++step
+/u/cos217/Assignment4/bdtBad1.c:289:7559:beg:0x402100
++step
+/u/cos217/Assignment4/bdtBad1.c:295:7686:beg:0x402124
++step
+/u/cos217/Assignment4/bdtBad1.c:296:7704:beg:0x40212c
++step
+/u/cos217/Assignment4/bdtBad1.c:271:7046:beg:0x402140
++step
+/u/cos217/Assignment4/bdtBad1.c:299:7746:beg:0x40214c
++step
+/u/cos217/Assignment4/bdtBad1.c:306:7926:beg:0x402154
++step
+/u/cos217/Assignment4/bdtBad1.c:307:7950:beg:0x402160
++step
+/u/cos217/Assignment4/bdtBad1.c:308:7973:beg:0x402170
++step
+/u/cos217/Assignment4/bdtBad1.c:313:8069:beg:0x402184
++step
+BDT_insertPath (path=0x4035f0 "a/b/c") at bdtBad1.c:324
+/u/cos217/Assignment4/bdtBad1.c:324:8259:beg:0x4021dc
++step
+
+Program received signal SIGABRT, Aborted.
+0x0000ffffbe5f50e8 in raise () from /lib64/libc.so.6
++run
+Starting program: /u/eagarwal/Assignment-4/1BDT/bdtBad1 
+
+Program received signal SIGABRT, Aborted.
+0x0000ffffbe5f50e8 in raise () from /lib64/libc.so.6
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-222.sd7.aarch64
++where
+#0  0x0000ffffbe5f50e8 in raise () from /lib64/libc.so.6
+#1  0x0000ffffbe5f6760 in abort () from /lib64/libc.so.6
+#2  0x0000ffffbe5ee5dc in __assert_fail_base () from /lib64/libc.so.6
+#3  0x0000ffffbe5ee694 in __assert_fail () from /lib64/libc.so.6
+#4  0x0000000000402760 in main () at bdt_client.c:22
++break 22
+Breakpoint 1 at 0x40272c: file bdt_client.c, line 22.
++run
+The program being debugged has been started already.
+Start it from the beginning? (y or n) Starting program: /u/eagarwal/Assignment-4/1BDT/bdtBad1 
+
+Breakpoint 1, main () at bdt_client.c:22
+/u/eagarwal/Assignment-4/1BDT/bdt_client.c:22:814:beg:0x40272c
++step
+BDT_insertPath (path=0x4035f0 "a/b/c") at bdtBad1.c:320
+/u/cos217/Assignment4/bdtBad1.c:320:8155:beg:0x402198
++step
+/u/cos217/Assignment4/bdtBad1.c:322:8181:beg:0x4021c4
++step
+BDT_traversePath (path=0x4035f0 "a/b/c") at bdtBad1.c:140
+/u/cos217/Assignment4/bdtBad1.c:140:3870:beg:0x401db4
++step
+/u/cos217/Assignment4/bdtBad1.c:141:3895:beg:0x401de0
++step
+BDT_traversePathFrom (path=0x4035f0 "a/b/c", curr=0x0) at bdtBad1.c:106
+/u/cos217/Assignment4/bdtBad1.c:106:2824:beg:0x401cbc
++step
+/u/cos217/Assignment4/bdtBad1.c:109:2884:beg:0x401ce8
++step
+/u/cos217/Assignment4/bdtBad1.c:110:2904:beg:0x401cf4
++step
+/u/cos217/Assignment4/bdtBad1.c:132:3655:beg:0x401d9c
++step
+BDT_traversePath (path=0x4035f0 "a/b/c") at bdtBad1.c:142
+/u/cos217/Assignment4/bdtBad1.c:142:3939:beg:0x401df4
++step
+BDT_insertPath (path=0x4035f0 "a/b/c") at bdtBad1.c:323
+/u/cos217/Assignment4/bdtBad1.c:323:8215:beg:0x4021d0
++step
+BDT_insertRestOfPath (path=0x4035f0 "a/b/c", parent=0x0) at bdtBad1.c:237
+/u/cos217/Assignment4/bdtBad1.c:237:6252:beg:0x401fac
++step
+/u/cos217/Assignment4/bdtBad1.c:238:6275:beg:0x401fb4
++step
+/u/cos217/Assignment4/bdtBad1.c:241:6332:beg:0x401fb8
++step
+/u/cos217/Assignment4/bdtBad1.c:245:6393:beg:0x401fc0
++step
+/u/cos217/Assignment4/bdtBad1.c:247:6419:beg:0x401fec
++step
+/u/cos217/Assignment4/bdtBad1.c:248:6441:beg:0x401ff8
++step
+/u/cos217/Assignment4/bdtBad1.c:265:6884:beg:0x402050
++step
+/u/cos217/Assignment4/bdtBad1.c:266:6926:beg:0x402064
++step
+/u/cos217/Assignment4/bdtBad1.c:268:6977:beg:0x402078
++step
+/u/cos217/Assignment4/bdtBad1.c:269:7008:beg:0x402084
++step
+/u/cos217/Assignment4/bdtBad1.c:271:7046:beg:0x402098
++step
+/u/cos217/Assignment4/bdtBad1.c:272:7075:beg:0x40209c
++step
+BDT_newNode (parent=0x0, dir=0x430010 "a") at bdtBad1.c:64
+/u/cos217/Assignment4/bdtBad1.c:64:1912:beg:0x401b40
++step
+/u/cos217/Assignment4/bdtBad1.c:66:1937:beg:0x401b6c
++step
+/u/cos217/Assignment4/bdtBad1.c:67:1975:beg:0x401b78
++step
+/u/cos217/Assignment4/bdtBad1.c:70:2014:beg:0x401b8c
++step
+/u/cos217/Assignment4/bdtBad1.c:71:2036:beg:0x401b98
++step
+/u/cos217/Assignment4/bdtBad1.c:74:2163:beg:0x401bec
++step
+/u/cos217/Assignment4/bdtBad1.c:79:2232:beg:0x401c0c
++step
+/u/cos217/Assignment4/bdtBad1.c:84:2329:beg:0x401c50
++step
+/u/cos217/Assignment4/bdtBad1.c:85:2355:beg:0x401c60
++step
+/u/cos217/Assignment4/bdtBad1.c:86:2380:beg:0x401c6c
++step
+/u/cos217/Assignment4/bdtBad1.c:87:2403:beg:0x401c74
++step
+/u/cos217/Assignment4/bdtBad1.c:89:2427:beg:0x401c7c
++step
+/u/cos217/Assignment4/bdtBad1.c:91:2440:beg:0x401c98
++step
+/u/cos217/Assignment4/bdtBad1.c:92:2455:beg:0x401c9c
++step
+BDT_insertRestOfPath (path=0x4035f0 "a/b/c", parent=0x0) at bdtBad1.c:277
+/u/cos217/Assignment4/bdtBad1.c:277:7255:beg:0x4020ac
++step
+/u/cos217/Assignment4/bdtBad1.c:278:7282:beg:0x4020b8
++step
+/u/cos217/Assignment4/bdtBad1.c:289:7559:beg:0x402100
++step
+/u/cos217/Assignment4/bdtBad1.c:295:7686:beg:0x402124
++step
+/u/cos217/Assignment4/bdtBad1.c:296:7704:beg:0x40212c
++step
+/u/cos217/Assignment4/bdtBad1.c:271:7046:beg:0x402140
++step
+/u/cos217/Assignment4/bdtBad1.c:272:7075:beg:0x40209c
++step
+BDT_newNode (parent=0x430030, dir=0x430012 "b") at bdtBad1.c:64
+/u/cos217/Assignment4/bdtBad1.c:64:1912:beg:0x401b40
++step
+/u/cos217/Assignment4/bdtBad1.c:66:1937:beg:0x401b6c
++step
+/u/cos217/Assignment4/bdtBad1.c:67:1975:beg:0x401b78
++step
+/u/cos217/Assignment4/bdtBad1.c:70:2014:beg:0x401b8c
++step
+/u/cos217/Assignment4/bdtBad1.c:73:2099:beg:0x401bbc
++step
+/u/cos217/Assignment4/bdtBad1.c:74:2163:beg:0x401bec
++step
+/u/cos217/Assignment4/bdtBad1.c:79:2232:beg:0x401c0c
++step
+/u/cos217/Assignment4/bdtBad1.c:80:2256:beg:0x401c18
++step
+/u/cos217/Assignment4/bdtBad1.c:81:2294:beg:0x401c2c
++step
+/u/cos217/Assignment4/bdtBad1.c:84:2329:beg:0x401c50
++step
+/u/cos217/Assignment4/bdtBad1.c:85:2355:beg:0x401c60
++step
+/u/cos217/Assignment4/bdtBad1.c:86:2380:beg:0x401c6c
++step
+/u/cos217/Assignment4/bdtBad1.c:87:2403:beg:0x401c74
++step
+/u/cos217/Assignment4/bdtBad1.c:89:2427:beg:0x401c7c
++step
+/u/cos217/Assignment4/bdtBad1.c:91:2440:beg:0x401c98
++step
+/u/cos217/Assignment4/bdtBad1.c:92:2455:beg:0x401c9c
++step
+BDT_insertRestOfPath (path=0x4035f0 "a/b/c", parent=0x0) at bdtBad1.c:277
+/u/cos217/Assignment4/bdtBad1.c:277:7255:beg:0x4020ac
++step
+/u/cos217/Assignment4/bdtBad1.c:280:7320:beg:0x4020c4
++step
+BDT_linkParentToChild (parent=0x430030, child=0x430080) at bdtBad1.c:171
+/u/cos217/Assignment4/bdtBad1.c:171:4654:beg:0x401e74
++step
+/u/cos217/Assignment4/bdtBad1.c:173:4682:beg:0x401ea0
++step
+/u/cos217/Assignment4/bdtBad1.c:174:4712:beg:0x401eb0
++step
+/u/cos217/Assignment4/bdtBad1.c:182:4889:beg:0x401ef0
++step
+/u/cos217/Assignment4/bdtBad1.c:184:4909:beg:0x401ef4
++step
+BDT_insertRestOfPath (path=0x4035f0 "a/b/c", parent=0x0) at bdtBad1.c:281
+/u/cos217/Assignment4/bdtBad1.c:281:7372:beg:0x4020d4
++step
+/u/cos217/Assignment4/bdtBad1.c:289:7559:beg:0x402100
++step
+/u/cos217/Assignment4/bdtBad1.c:295:7686:beg:0x402124
++step
+/u/cos217/Assignment4/bdtBad1.c:296:7704:beg:0x40212c
++step
+/u/cos217/Assignment4/bdtBad1.c:271:7046:beg:0x402140
++step
+/u/cos217/Assignment4/bdtBad1.c:272:7075:beg:0x40209c
++step
+BDT_newNode (parent=0x430080, dir=0x430014 "c") at bdtBad1.c:64
+/u/cos217/Assignment4/bdtBad1.c:64:1912:beg:0x401b40
++step
+/u/cos217/Assignment4/bdtBad1.c:66:1937:beg:0x401b6c
++step
+/u/cos217/Assignment4/bdtBad1.c:67:1975:beg:0x401b78
++step
+/u/cos217/Assignment4/bdtBad1.c:70:2014:beg:0x401b8c
++step
+/u/cos217/Assignment4/bdtBad1.c:73:2099:beg:0x401bbc
++step
+/u/cos217/Assignment4/bdtBad1.c:74:2163:beg:0x401bec
++step
+/u/cos217/Assignment4/bdtBad1.c:79:2232:beg:0x401c0c
++step
+/u/cos217/Assignment4/bdtBad1.c:80:2256:beg:0x401c18
++step
+/u/cos217/Assignment4/bdtBad1.c:81:2294:beg:0x401c2c
++step
+/u/cos217/Assignment4/bdtBad1.c:84:2329:beg:0x401c50
++step
+/u/cos217/Assignment4/bdtBad1.c:85:2355:beg:0x401c60
++step
+/u/cos217/Assignment4/bdtBad1.c:86:2380:beg:0x401c6c
++step
+/u/cos217/Assignment4/bdtBad1.c:87:2403:beg:0x401c74
++step
+/u/cos217/Assignment4/bdtBad1.c:89:2427:beg:0x401c7c
++step
+/u/cos217/Assignment4/bdtBad1.c:91:2440:beg:0x401c98
++step
+/u/cos217/Assignment4/bdtBad1.c:92:2455:beg:0x401c9c
++step
+BDT_insertRestOfPath (path=0x4035f0 "a/b/c", parent=0x0) at bdtBad1.c:277
+/u/cos217/Assignment4/bdtBad1.c:277:7255:beg:0x4020ac
++step
+/u/cos217/Assignment4/bdtBad1.c:280:7320:beg:0x4020c4
++step
+BDT_linkParentToChild (parent=0x430080, child=0x4300d0) at bdtBad1.c:171
+/u/cos217/Assignment4/bdtBad1.c:171:4654:beg:0x401e74
++step
+/u/cos217/Assignment4/bdtBad1.c:173:4682:beg:0x401ea0
++step
+/u/cos217/Assignment4/bdtBad1.c:174:4712:beg:0x401eb0
++step
+/u/cos217/Assignment4/bdtBad1.c:182:4889:beg:0x401ef0
++step
+/u/cos217/Assignment4/bdtBad1.c:184:4909:beg:0x401ef4
++step
+BDT_insertRestOfPath (path=0x4035f0 "a/b/c", parent=0x0) at bdtBad1.c:281
+/u/cos217/Assignment4/bdtBad1.c:281:7372:beg:0x4020d4
++step
+/u/cos217/Assignment4/bdtBad1.c:289:7559:beg:0x402100
++step
+/u/cos217/Assignment4/bdtBad1.c:295:7686:beg:0x402124
++step
+/u/cos217/Assignment4/bdtBad1.c:296:7704:beg:0x40212c
++step
+/u/cos217/Assignment4/bdtBad1.c:271:7046:beg:0x402140
++step
+/u/cos217/Assignment4/bdtBad1.c:299:7746:beg:0x40214c
++step
+/u/cos217/Assignment4/bdtBad1.c:306:7926:beg:0x402154
++step
+/u/cos217/Assignment4/bdtBad1.c:307:7950:beg:0x402160
++step
+/u/cos217/Assignment4/bdtBad1.c:308:7973:beg:0x402170
++step
+/u/cos217/Assignment4/bdtBad1.c:313:8069:beg:0x402184
++step
+BDT_insertPath (path=0x4035f0 "a/b/c") at bdtBad1.c:324
+/u/cos217/Assignment4/bdtBad1.c:324:8259:beg:0x4021dc
++step
+
+Program received signal SIGABRT, Aborted.
+0x0000ffffbe5f50e8 in raise () from /lib64/libc.so.6
++step
+Single stepping until exit from function raise,
+which has no line number information.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
++run
+Starting program: /u/eagarwal/Assignment-4/1BDT/bdtBad1 
+
+Program received signal SIGABRT, Aborted.
+0x0000ffffbe5f50e8 in raise () from /lib64/libc.so.6
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-222.sd7.aarch64
++where
+#0  0x0000ffffbe5f50e8 in raise () from /lib64/libc.so.6
+#1  0x0000ffffbe5f6760 in abort () from /lib64/libc.so.6
+#2  0x0000ffffbe5ee5dc in __assert_fail_base () from /lib64/libc.so.6
+#3  0x0000ffffbe5ee694 in __assert_fail () from /lib64/libc.so.6
+#4  0x0000000000402760 in main () at bdt_client.c:22
++break 22
+Breakpoint 1 at 0x40272c: file bdt_client.c, line 22.
++run
+The program being debugged has been started already.
+Start it from the beginning? (y or n) Starting program: /u/eagarwal/Assignment-4/1BDT/bdtBad1 
+
+Breakpoint 1, main () at bdt_client.c:22
+/u/eagarwal/Assignment-4/1BDT/bdt_client.c:22:814:beg:0x40272c
++sttep
+Undefined command: "sttep".  Try "help".
++run
+Starting program: /u/eagarwal/Assignment-4/1BDT/bdtBad1 
+
+Program received signal SIGABRT, Aborted.
+0x0000ffffbe5f50e8 in raise () from /lib64/libc.so.6
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-222.sd7.aarch64
++where
+#0  0x0000ffffbe5f50e8 in raise () from /lib64/libc.so.6
+#1  0x0000ffffbe5f6760 in abort () from /lib64/libc.so.6
+#2  0x0000ffffbe5ee5dc in __assert_fail_base () from /lib64/libc.so.6
+#3  0x0000ffffbe5ee694 in __assert_fail () from /lib64/libc.so.6
+#4  0x0000000000402760 in main () at bdt_client.c:22
++break 22
+Breakpoint 1 at 0x40272c: file bdt_client.c, line 22.
++step
+Single stepping until exit from function raise,
+which has no line number information.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
++run
+Starting program: /u/eagarwal/Assignment-4/1BDT/bdtBad1 
+
+Breakpoint 1, main () at bdt_client.c:22
+/u/eagarwal/Assignment-4/1BDT/bdt_client.c:22:814:beg:0x40272c
++step
+BDT_insertPath (path=0x4035f0 "a/b/c") at bdtBad1.c:320
+/u/cos217/Assignment4/bdtBad1.c:320:8155:beg:0x402198
++step
+/u/cos217/Assignment4/bdtBad1.c:322:8181:beg:0x4021c4
++step
+BDT_traversePath (path=0x4035f0 "a/b/c") at bdtBad1.c:140
+/u/cos217/Assignment4/bdtBad1.c:140:3870:beg:0x401db4
++step
+/u/cos217/Assignment4/bdtBad1.c:141:3895:beg:0x401de0
++step
+BDT_traversePathFrom (path=0x4035f0 "a/b/c", curr=0x0) at bdtBad1.c:106
+/u/cos217/Assignment4/bdtBad1.c:106:2824:beg:0x401cbc
++step
+/u/cos217/Assignment4/bdtBad1.c:109:2884:beg:0x401ce8
++step
+/u/cos217/Assignment4/bdtBad1.c:110:2904:beg:0x401cf4
++step
+/u/cos217/Assignment4/bdtBad1.c:132:3655:beg:0x401d9c
++step
+BDT_traversePath (path=0x4035f0 "a/b/c") at bdtBad1.c:142
+/u/cos217/Assignment4/bdtBad1.c:142:3939:beg:0x401df4
++step
+BDT_insertPath (path=0x4035f0 "a/b/c") at bdtBad1.c:323
+/u/cos217/Assignment4/bdtBad1.c:323:8215:beg:0x4021d0
++step
+BDT_insertRestOfPath (path=0x4035f0 "a/b/c", parent=0x0) at bdtBad1.c:237
+/u/cos217/Assignment4/bdtBad1.c:237:6252:beg:0x401fac
++step
+/u/cos217/Assignment4/bdtBad1.c:238:6275:beg:0x401fb4
++step
+/u/cos217/Assignment4/bdtBad1.c:241:6332:beg:0x401fb8
++step
+/u/cos217/Assignment4/bdtBad1.c:245:6393:beg:0x401fc0
++step
+/u/cos217/Assignment4/bdtBad1.c:247:6419:beg:0x401fec
++step
+/u/cos217/Assignment4/bdtBad1.c:248:6441:beg:0x401ff8
++step
+/u/cos217/Assignment4/bdtBad1.c:265:6884:beg:0x402050
++step
+/u/cos217/Assignment4/bdtBad1.c:266:6926:beg:0x402064
++step
+/u/cos217/Assignment4/bdtBad1.c:268:6977:beg:0x402078
++step
+/u/cos217/Assignment4/bdtBad1.c:269:7008:beg:0x402084
++step
+/u/cos217/Assignment4/bdtBad1.c:271:7046:beg:0x402098
++step
+/u/cos217/Assignment4/bdtBad1.c:272:7075:beg:0x40209c
++step
+BDT_newNode (parent=0x0, dir=0x430010 "a") at bdtBad1.c:64
+/u/cos217/Assignment4/bdtBad1.c:64:1912:beg:0x401b40
++step
+/u/cos217/Assignment4/bdtBad1.c:66:1937:beg:0x401b6c
++step
+/u/cos217/Assignment4/bdtBad1.c:67:1975:beg:0x401b78
++step
+/u/cos217/Assignment4/bdtBad1.c:70:2014:beg:0x401b8c
++step
+/u/cos217/Assignment4/bdtBad1.c:71:2036:beg:0x401b98
++step
+/u/cos217/Assignment4/bdtBad1.c:74:2163:beg:0x401bec
++step
+/u/cos217/Assignment4/bdtBad1.c:79:2232:beg:0x401c0c
++step
+/u/cos217/Assignment4/bdtBad1.c:84:2329:beg:0x401c50
++step
+/u/cos217/Assignment4/bdtBad1.c:85:2355:beg:0x401c60
++step
+/u/cos217/Assignment4/bdtBad1.c:86:2380:beg:0x401c6c
++step
+/u/cos217/Assignment4/bdtBad1.c:87:2403:beg:0x401c74
++step
+/u/cos217/Assignment4/bdtBad1.c:89:2427:beg:0x401c7c
++step
+/u/cos217/Assignment4/bdtBad1.c:91:2440:beg:0x401c98
++step
+/u/cos217/Assignment4/bdtBad1.c:92:2455:beg:0x401c9c
++step
+BDT_insertRestOfPath (path=0x4035f0 "a/b/c", parent=0x0) at bdtBad1.c:277
+/u/cos217/Assignment4/bdtBad1.c:277:7255:beg:0x4020ac
++step
+/u/cos217/Assignment4/bdtBad1.c:278:7282:beg:0x4020b8
++step
+/u/cos217/Assignment4/bdtBad1.c:289:7559:beg:0x402100
++step
+/u/cos217/Assignment4/bdtBad1.c:295:7686:beg:0x402124
++step
+/u/cos217/Assignment4/bdtBad1.c:296:7704:beg:0x40212c
++step
+/u/cos217/Assignment4/bdtBad1.c:271:7046:beg:0x402140
++step
+/u/cos217/Assignment4/bdtBad1.c:272:7075:beg:0x40209c
++step
+BDT_newNode (parent=0x430030, dir=0x430012 "b") at bdtBad1.c:64
+/u/cos217/Assignment4/bdtBad1.c:64:1912:beg:0x401b40
++step
+/u/cos217/Assignment4/bdtBad1.c:66:1937:beg:0x401b6c
++step
+/u/cos217/Assignment4/bdtBad1.c:67:1975:beg:0x401b78
++step
+/u/cos217/Assignment4/bdtBad1.c:70:2014:beg:0x401b8c
++step
+/u/cos217/Assignment4/bdtBad1.c:73:2099:beg:0x401bbc
++step
+/u/cos217/Assignment4/bdtBad1.c:74:2163:beg:0x401bec
++step
+/u/cos217/Assignment4/bdtBad1.c:79:2232:beg:0x401c0c
++step
+/u/cos217/Assignment4/bdtBad1.c:80:2256:beg:0x401c18
++step
+/u/cos217/Assignment4/bdtBad1.c:81:2294:beg:0x401c2c
++step
+/u/cos217/Assignment4/bdtBad1.c:84:2329:beg:0x401c50
++step
+/u/cos217/Assignment4/bdtBad1.c:85:2355:beg:0x401c60
++step
+/u/cos217/Assignment4/bdtBad1.c:86:2380:beg:0x401c6c
++step
+/u/cos217/Assignment4/bdtBad1.c:87:2403:beg:0x401c74
++step
+/u/cos217/Assignment4/bdtBad1.c:89:2427:beg:0x401c7c
++step
+/u/cos217/Assignment4/bdtBad1.c:91:2440:beg:0x401c98
++step
+/u/cos217/Assignment4/bdtBad1.c:92:2455:beg:0x401c9c
++step
+BDT_insertRestOfPath (path=0x4035f0 "a/b/c", parent=0x0) at bdtBad1.c:277
+/u/cos217/Assignment4/bdtBad1.c:277:7255:beg:0x4020ac
++step
+/u/cos217/Assignment4/bdtBad1.c:280:7320:beg:0x4020c4
++step
+BDT_linkParentToChild (parent=0x430030, child=0x430080) at bdtBad1.c:171
+/u/cos217/Assignment4/bdtBad1.c:171:4654:beg:0x401e74
++step
+/u/cos217/Assignment4/bdtBad1.c:173:4682:beg:0x401ea0
++step
+/u/cos217/Assignment4/bdtBad1.c:174:4712:beg:0x401eb0
++step
+/u/cos217/Assignment4/bdtBad1.c:182:4889:beg:0x401ef0
++step
+/u/cos217/Assignment4/bdtBad1.c:184:4909:beg:0x401ef4
++step
+BDT_insertRestOfPath (path=0x4035f0 "a/b/c", parent=0x0) at bdtBad1.c:281
+/u/cos217/Assignment4/bdtBad1.c:281:7372:beg:0x4020d4
++step
+/u/cos217/Assignment4/bdtBad1.c:289:7559:beg:0x402100
++step
+/u/cos217/Assignment4/bdtBad1.c:295:7686:beg:0x402124
++step
+/u/cos217/Assignment4/bdtBad1.c:296:7704:beg:0x40212c
++step
+/u/cos217/Assignment4/bdtBad1.c:271:7046:beg:0x402140
++step
+/u/cos217/Assignment4/bdtBad1.c:272:7075:beg:0x40209c
++step
+BDT_newNode (parent=0x430080, dir=0x430014 "c") at bdtBad1.c:64
+/u/cos217/Assignment4/bdtBad1.c:64:1912:beg:0x401b40
++step
+/u/cos217/Assignment4/bdtBad1.c:66:1937:beg:0x401b6c
++step
+/u/cos217/Assignment4/bdtBad1.c:67:1975:beg:0x401b78
++step
+/u/cos217/Assignment4/bdtBad1.c:70:2014:beg:0x401b8c
++step
+/u/cos217/Assignment4/bdtBad1.c:73:2099:beg:0x401bbc
++step
+/u/cos217/Assignment4/bdtBad1.c:74:2163:beg:0x401bec
++step
+/u/cos217/Assignment4/bdtBad1.c:79:2232:beg:0x401c0c
++step
+/u/cos217/Assignment4/bdtBad1.c:80:2256:beg:0x401c18
++step
+/u/cos217/Assignment4/bdtBad1.c:81:2294:beg:0x401c2c
++step
+/u/cos217/Assignment4/bdtBad1.c:84:2329:beg:0x401c50
++step
+/u/cos217/Assignment4/bdtBad1.c:85:2355:beg:0x401c60
++step
+/u/cos217/Assignment4/bdtBad1.c:86:2380:beg:0x401c6c
++step
+/u/cos217/Assignment4/bdtBad1.c:87:2403:beg:0x401c74
++step
+/u/cos217/Assignment4/bdtBad1.c:89:2427:beg:0x401c7c
++step
+/u/cos217/Assignment4/bdtBad1.c:91:2440:beg:0x401c98
++step
+/u/cos217/Assignment4/bdtBad1.c:92:2455:beg:0x401c9c
++step
+BDT_insertRestOfPath (path=0x4035f0 "a/b/c", parent=0x0) at bdtBad1.c:277
+/u/cos217/Assignment4/bdtBad1.c:277:7255:beg:0x4020ac
++step
+/u/cos217/Assignment4/bdtBad1.c:280:7320:beg:0x4020c4
++step
+BDT_linkParentToChild (parent=0x430080, child=0x4300d0) at bdtBad1.c:171
+/u/cos217/Assignment4/bdtBad1.c:171:4654:beg:0x401e74
++step
+/u/cos217/Assignment4/bdtBad1.c:173:4682:beg:0x401ea0
++step
+/u/cos217/Assignment4/bdtBad1.c:174:4712:beg:0x401eb0
++step
+/u/cos217/Assignment4/bdtBad1.c:182:4889:beg:0x401ef0
++step
+/u/cos217/Assignment4/bdtBad1.c:184:4909:beg:0x401ef4
++step
+BDT_insertRestOfPath (path=0x4035f0 "a/b/c", parent=0x0) at bdtBad1.c:281
+/u/cos217/Assignment4/bdtBad1.c:281:7372:beg:0x4020d4
++step
+/u/cos217/Assignment4/bdtBad1.c:289:7559:beg:0x402100
++step
+/u/cos217/Assignment4/bdtBad1.c:295:7686:beg:0x402124
++step
+/u/cos217/Assignment4/bdtBad1.c:296:7704:beg:0x40212c
++step
+/u/cos217/Assignment4/bdtBad1.c:271:7046:beg:0x402140
++step
+/u/cos217/Assignment4/bdtBad1.c:299:7746:beg:0x40214c
++step
+/u/cos217/Assignment4/bdtBad1.c:306:7926:beg:0x402154
++step
+/u/cos217/Assignment4/bdtBad1.c:307:7950:beg:0x402160
++step
+/u/cos217/Assignment4/bdtBad1.c:308:7973:beg:0x402170
++step
+/u/cos217/Assignment4/bdtBad1.c:313:8069:beg:0x402184
++step
+BDT_insertPath (path=0x4035f0 "a/b/c") at bdtBad1.c:324
+/u/cos217/Assignment4/bdtBad1.c:324:8259:beg:0x4021dc
++step
+
+Program received signal SIGABRT, Aborted.
+0x0000ffffbe5f50e8 in raise () from /lib64/libc.so.6
